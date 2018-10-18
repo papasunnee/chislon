@@ -1,0 +1,32 @@
+@import "../../../styles/color.scss";
+
+.whatwedo {
+  padding: 70px 0px;
+  background-color: $grey;
+  text-align: center;
+  h1 {
+    span {
+      padding-bottom: 2px;
+      border-bottom: 5px solid $gold;
+    }
+  }
+  .num {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    background-color: $red;
+    font-size: 6em;
+    font-weight: 700;
+    color: $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blue {
+    background-color: $blue;
+  }
+  .gold {
+    background-color: $gold;
+  }
+}

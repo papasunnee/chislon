@@ -1,0 +1,56 @@
+@import "../../styles/color.scss";
+
+.footer {
+  background-color: #1a1f24;
+  background-image: url(/static/world.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  color: $white;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    height: 300px;
+    h5 {
+      color: $gold;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: $white;
+          padding: 2px;
+          display: block;
+          transition: 0.5s;
+          &::before {
+            content: "⯈";
+            color: $gold;
+            margin-right: 10px;
+          }
+          &:hover {
+            text-decoration: none;
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+  .footer2 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 12px;
+    height: 40px;
+    align-items: center;
+    span {
+      color: $gold;
+      padding: 0px 5px;
+    }
+  }
+}

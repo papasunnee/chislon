@@ -1,0 +1,12 @@
+@import "../../styles/color.scss";
+
+.getStarted {
+  background-color: $blue;
+  color: $white;
+  padding: 20px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #0069d2;
+  }
+}
