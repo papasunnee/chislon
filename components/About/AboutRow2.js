@@ -33,6 +33,16 @@ const AboutRow2 = props => {
           quo quos.
         </p>
       </Col>
+      <style jsx>
+        {`
+          img {
+            transition: 0.5s;
+          }
+          img:hover {
+            filter: grayscale(50%);
+          }
+        `}
+      </style>
     </Row>
   );
 };

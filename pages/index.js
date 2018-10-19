@@ -10,7 +10,7 @@ class Index extends Component {
   state = {};
   render() {
     return (
-      <Layout title="Home Page">
+      <Layout title="Home :: CHISLON">
         <div
           style={{
             backgroundImage: "url(/static/header.png)",

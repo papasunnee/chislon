@@ -1,19 +1,18 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
+import LatestNews from "../components/LatestNews";
 import Layout from "../components/Layout";
-import AboutRow from "../components/About/AboutRow";
 import GetStarted from "../components/General/GetStarted";
 import PageHeader from "../components/General/PageHeader";
-import AboutRow2 from "../components/About/AboutRow2";
 
-class About extends Component {
+class News extends Component {
   state = {};
   render() {
     return (
-      <Layout title="Services :: CHISLON">
+      <Layout title="Latest News :: CHISLON">
         <div
           style={{
-            backgroundImage: "url(/static/services.png)",
+            backgroundImage: "url(/static/latestnews.png)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
             backgroundSize: "cover",
@@ -24,7 +23,7 @@ class About extends Component {
           <Header />
         </div>
         <PageHeader
-          title="Services"
+          title="Latest News"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci
             expedita deserunt id in molestiae consectetur quam dolorum veniam
             autem sed quae deleniti eveniet atque nemo enim, repellendus quo
@@ -33,13 +32,18 @@ class About extends Component {
             veniam autem sed quae deleniti eveniet atque nemo enim, repellendus
             quo quos."
         />
-        <div className="container">
-          <AboutRow title="Business & Investment" image="business" />
-          <AboutRow2 title="Professional Work" image="professional" />
-          <AboutRow title="Education" image="education" />
-          <AboutRow2 title="Sports & Entertainment" image="sports" />
-          <AboutRow title="Medical Treatment" image="medical" />
-          <AboutRow2 title="Holidays & Leisure" image="holiday" />
+        <div className="container" style={{ display: "block" }}>
+          <div className="row">
+            <div className="col-md-4">
+              <LatestNews />
+            </div>
+            <div className="col-md-4">
+              <LatestNews />
+            </div>
+            <div className="col-md-4">
+              <LatestNews />
+            </div>
+          </div>
           <GetStarted />
         </div>
       </Layout>
@@ -47,4 +51,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default News;

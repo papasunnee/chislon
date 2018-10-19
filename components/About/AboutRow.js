@@ -28,8 +28,21 @@ const AboutRow = props => {
         </p>
       </Col>
       <Col md={6}>
-        <img src={`/static/about/${props.image}.png`} />
+        <img
+          src={`/static/about/${props.image}.png`}
+          style={{ width: "100%" }}
+        />
       </Col>
+      <style jsx>
+        {`
+          img {
+            transition: 0.5s;
+          }
+          img:hover {
+            filter: grayscale(50%);
+          }
+        `}
+      </style>
     </Row>
   );
 };
