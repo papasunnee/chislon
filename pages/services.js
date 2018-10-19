@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import Header from "../components/Header";
-import WhatWeDo from "../components/Header/Home/WhatWeDo";
-import SuccessStories from "../components/Header/Home/SuccessStories";
 import Layout from "../components/Layout";
 import AboutRow from "../components/About/AboutRow";
 import GetStarted from "../components/General/GetStarted";
 import PageHeader from "../components/General/PageHeader";
+import AboutRow2 from "../components/About/AboutRow2";
 
 class About extends Component {
   state = {};
@@ -15,7 +14,7 @@ class About extends Component {
       <Layout title="About Page">
         <div
           style={{
-            backgroundImage: "url(/static/about.png)",
+            backgroundImage: "url(/static/services.png)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
             backgroundSize: "cover",
@@ -26,7 +25,7 @@ class About extends Component {
           <Header />
         </div>
         <PageHeader
-          title="About"
+          title="Services"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci
             expedita deserunt id in molestiae consectetur quam dolorum veniam
             autem sed quae deleniti eveniet atque nemo enim, repellendus quo
@@ -36,13 +35,12 @@ class About extends Component {
             quo quos."
         />
         <div className="container">
-          <AboutRow title="Our History" image="history" />
-          <AboutRow title="Our Mission" image="mission" />
-          <AboutRow title="Our Expertise" image="expertise" />
-          <AboutRow title="Our Location" image="location" />
-          <AboutRow title="Management Team" />
-          <AboutRow title="Company Brohure" image="brochure" />
-          <AboutRow title="Frequently Asked Questions" />
+          <AboutRow title="Business & Investment" image="business" />
+          <AboutRow2 title="Professional Work" image="professional" />
+          <AboutRow title="Education" image="education" />
+          <AboutRow2 title="Sports & Entertainment" image="sports" />
+          <AboutRow title="Medical Treatment" image="medical" />
+          <AboutRow2 title="Holidays & Leisure" image="holiday" />
           <GetStarted />
         </div>
       </Layout>
