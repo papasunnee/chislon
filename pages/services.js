@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Row, Col } from "reactstrap";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import AboutRow from "../components/About/AboutRow";
@@ -11,7 +10,7 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <Layout title="About Page">
+      <Layout title="Services">
         <div
           style={{
             backgroundImage: "url(/static/services.png)",
