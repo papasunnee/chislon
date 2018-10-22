@@ -23,7 +23,7 @@ class News extends Component {
           <Header />
         </div>
         <PageHeader
-          title="Latest News"
+          title="Partners"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci
             expedita deserunt id in molestiae consectetur quam dolorum veniam
             autem sed quae deleniti eveniet atque nemo enim, repellendus quo

@@ -15,6 +15,7 @@ export default () => (
         </Link>
       </div>
       <div>
+      <span className="menu-control" onClick={navigator}>&#9776;</span>
         <ul className="menu">
           <li>
             <Link href="/">
@@ -56,28 +57,42 @@ export default () => (
     </nav>
     <style jsx>
       {`
-        .navHolder {
-          line-height: 80px;
+        .navHolder{
+          padding-top : 40px ;
         }
         .logo a img {
           width: 300px;
         }
+        span.menu-control{
+          color : #fff ;
+          padding : 10px ;
+          font-size : 2em ;
+          font-weight : bolder ;
+          box-sizing : border-box ;
+          cursor : pointer ;
+          background-color : rgba(0,0,0,0.2) ;
+        }
         nav {
           display: flex;
           justify-content: space-between;
-          align-items: center;
         }
         nav ul.menu {
           margin: 0;
-          padding: 0;
-          display: flex;
-          padding-top: 10px;
+          padding: 0px;
+          background-color : rgba(0,0,0,0.3) ;
+          height : 0px ;
+          overflow : hidden ;
+
+          
         }
         nav ul.menu li {
           list-style: none;
         }
         nav ul.menu li a {
-          padding: 5px 10px;
+          padding : 20px;
+          margin : 0 ;
+          display: block ;
+          line-height : 0px ;
           color: #fff;
           transition: 0.5s;
         }

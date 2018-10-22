@@ -4,7 +4,12 @@ const Index = props => {
   return (
     <div>
       <div style={{ position: "relative" }}>
-        <img src="/static/latestnews/1.png" alt="" width="100%" height="100%" />
+        <img
+          src={`/static/latestnews/${props.image}.png`}
+          alt=""
+          width="100%"
+          height="100%"
+        />
         <div
           style={{
             position: "absolute",
@@ -26,6 +31,16 @@ const Index = props => {
           </p>
         </div>
       </div>
+      <style jsx>
+        {`
+          img {
+            transition: 0.5s;
+          }
+          img:hover {
+            filter: grayscale(50%);
+          }
+        `}
+      </style>
     </div>
   );
 };

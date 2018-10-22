@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link" ;
 import "./GetStarted.scss";
 
 export default class GetStarted extends Component {
@@ -6,7 +7,7 @@ export default class GetStarted extends Component {
   render() {
     return (
       <div className="getStarted">
-        <h1>GET STARTED</h1>
+        <Link href="/registration"><a>GET STARTED</a></Link>
       </div>
     );
   }
