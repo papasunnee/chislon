@@ -14,32 +14,32 @@ export default class Footer extends Component {
               <div>
                 <ul>
                   <li>
-                    <Link href="/">
+                    <Link href="/about">
                       <a>About</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/services">
                       <a>Services</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/how-we-work">
                       <a>How We Work</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/partners">
                       <a>Partners</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/latest-news">
                       <a>Latest News</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/">
+                    <Link href="/contact">
                       <a>Contact</a>
                     </Link>
                   </li>
