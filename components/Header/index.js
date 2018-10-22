@@ -15,7 +15,7 @@ export default () => (
         </Link>
       </div>
       <div>
-      <span className="menu-control" onClick={navigator}>&#9776;</span>
+      <span className="menu-control">&#9776;</span>
         <ul className="menu">
           <li>
             <Link href="/">
