@@ -134,7 +134,8 @@ export default class extends Component {
             }
             nav ul.menu li a:hover {
               text-decoration: none;
-              color: #e5e5e5;
+              color: orange;
+              background-color: rgba(0, 0, 0, 0.4) !important;
             }
           `}
         </style>

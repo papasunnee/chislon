@@ -2,12 +2,14 @@ import React, { Component, Fragment } from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import "./Footer.scss";
+import Immigration from "./Immigration";
 
 export default class Footer extends Component {
   state = {};
   render() {
     return (
       <Fragment>
+        <Immigration />
         <div className="footer">
           <Container>
             <div className="content">
