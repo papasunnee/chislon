@@ -43,7 +43,6 @@ class About extends Component {
           <AboutRow title="Management Team" />
           <AboutRow title="Company Brohure" image="brochure" />
           <AboutRow title="Frequently Asked Questions" />
-          <GetStarted />
         </div>
       </Layout>
     );

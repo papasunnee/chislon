@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
+import Link from "next/link" ;
 
 const AboutRow = props => {
   return (
     <Row style={{ padding: "50px 0px" }}>
       <Col md={6}>
+      <Link href="">
+      <a>
         <h1
           style={{
             backgroundColor: "#cea600",
@@ -12,9 +15,11 @@ const AboutRow = props => {
             textAlign: "center",
             padding: "8px 0px"
           }}
-        >
+          >
           {props.title}
         </h1>
+              </a>
+          </Link>
         <p style={{ textAlign: "center" }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci
           expedita deserunt id in molestiae consectetur quam dolorum veniam
@@ -40,6 +45,15 @@ const AboutRow = props => {
           }
           img:hover {
             filter: grayscale(50%);
+          }
+          a{
+            text-decoration : none ;
+          }
+          a:hover{
+            text-decoration : none ;
+          }
+          h1:hover{
+            background-color : #b18e02 !important;
           }
         `}
       </style>

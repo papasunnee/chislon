@@ -21,7 +21,7 @@ export default class RightSection extends Component {
           </div>
         </div>
         <div className="content">
-          <p>School in</p>
+          <p>Start a business in</p>
           <div className="imageHolder">
             {flags.map(({ image, href }) => (
               <Link href={href}>
@@ -33,7 +33,7 @@ export default class RightSection extends Component {
           </div>
         </div>
         <div className="content">
-          <p>Get Medical Services in</p>
+          <p>School in</p>
           <div className="imageHolder">
             {flags.map(({ image, href }) => (
               <Link href={href}>

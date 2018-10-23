@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from "next/link" ;
 import { Row, Col } from "reactstrap";
 
 const AboutRow2 = props => {
@@ -11,6 +12,8 @@ const AboutRow2 = props => {
         />
       </Col>
       <Col md={6}>
+      <Link href="">
+      <a>
         <h1
           style={{
             backgroundColor: "#cea600",
@@ -21,6 +24,8 @@ const AboutRow2 = props => {
         >
           {props.title}
         </h1>
+        </a>
+        </Link>
         <p style={{ textAlign: "center" }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci
           expedita deserunt id in molestiae consectetur quam dolorum veniam
@@ -40,6 +45,15 @@ const AboutRow2 = props => {
           }
           img:hover {
             filter: grayscale(50%);
+          }
+          a{
+            text-decoration : none ;
+          }
+          a:hover{
+            text-decoration : none ;
+          }
+          h1:hover{
+            background-color : #b18e02 !important;
           }
         `}
       </style>

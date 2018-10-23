@@ -40,7 +40,6 @@ class About extends Component {
           <AboutRow2 title="Sports & Entertainment" image="sports" />
           <AboutRow title="Medical Treatment" image="medical" />
           <AboutRow2 title="Holidays & Leisure" image="holiday" />
-          <GetStarted />
         </div>
       </Layout>
     );

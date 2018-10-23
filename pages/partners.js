@@ -58,7 +58,6 @@ class News extends Component {
           </div>
           <br />
           <br />
-          <GetStarted />
         </div>
       </Layout>
     );

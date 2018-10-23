@@ -112,8 +112,6 @@ class HowWeWork extends Component {
               </Row>
             );
           })}
-
-          <GetStarted />
         </div>
       </Layout>
     );
