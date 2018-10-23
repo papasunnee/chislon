@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import "./Footer.scss";
+import links from "../Header/Links";
 import Immigration from "./Immigration";
 
 export default class Footer extends Component {
@@ -15,36 +16,13 @@ export default class Footer extends Component {
             <div className="content">
               <div>
                 <ul>
-                  <li>
-                    <Link href="/about">
-                      <a>About</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/services">
-                      <a>Services</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/how-we-work">
-                      <a>How We Work</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/partners">
-                      <a>Partners</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/latest-news">
-                      <a>Latest News</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">
-                      <a>Contact</a>
-                    </Link>
-                  </li>
+                  {links.map(({ label, href }) => (
+                    <li>
+                      <Link href={href}>
+                        <a>{label}</a>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div>

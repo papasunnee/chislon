@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
+import links from "./Links.js";
 
 export default class extends Component {
   constructor(props) {
@@ -39,41 +40,13 @@ export default class extends Component {
               className={`menu ${this.state.toggleClass ? "toggleClass" : ""}
               `}
             >
-              <li>
-                <Link href="/">
-                  <a>Home</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <a>About</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/services">
-                  <a>Services</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-we-work">
-                  <a>How We Work</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/partners">
-                  <a>Partners</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/latest-news">
-                  <a>Latest News</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact">
-                  <a>Contact</a>
-                </Link>
-              </li>
+              {links.map(({ label, href }) => (
+                <li>
+                  <Link href={href}>
+                    <a>{label}</a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>

@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import WhatWeDo from "../components/Header/Home/WhatWeDo";
 import SuccessStories from "../components/Header/Home/SuccessStories";
 import Layout from "../components/Layout";
+import RightSection from "../components/General/RightSection";
 
 class Index extends Component {
   state = {};
@@ -48,11 +49,12 @@ class Index extends Component {
               </p>
             </Col>
             <Col md={4}>
-              <img
+              {/* <img
                 src="/static/homeLeft.png"
                 alt=""
                 style={{ width: "100%" }}
-              />
+              /> */}
+                <RightSection />
             </Col>
           </Row>
         </div>
