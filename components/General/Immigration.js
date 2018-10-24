@@ -17,7 +17,7 @@ export default class Immigration extends Component {
             </Row>
             <Row>
               <Col md={3}>
-                <Link href="/country/uk">
+                <Link href="/latest-news">
                   <a>
                     <img src="/static/country/uk.png" alt="" />
                     <h5>United Kingdom</h5>
@@ -30,7 +30,7 @@ export default class Immigration extends Component {
                 </p>
               </Col>
               <Col md={3}>
-                <Link href="/country/usa">
+                <Link href="/latest-news">
                   <a>
                     <img src="/static/country/usa.jpg" alt="" />
                     <h5>USA</h5>
@@ -42,7 +42,7 @@ export default class Immigration extends Component {
                 </p>
               </Col>
               <Col md={3}>
-                <Link href="/country/australia">
+                <Link href="/latest-news">
                   <a>
                     <img src="/static/country/australia.png" alt="" />
                     <h5>Australia</h5>
@@ -54,7 +54,7 @@ export default class Immigration extends Component {
                 </p>
               </Col>
               <Col md={3}>
-                <Link href="/country/canada">
+                <Link href="/latest-news">
                   <a>
                     <img src="/static/country/canada.png" alt="" />
                     <h5>Canada</h5>
