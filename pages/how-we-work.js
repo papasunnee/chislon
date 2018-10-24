@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import AboutRow from "../components/About/AboutRow";
-import GetStarted from "../components/General/GetStarted";
 import PageHeader from "../components/General/PageHeader";
 
 class HowWeWork extends Component {

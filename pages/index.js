@@ -6,92 +6,106 @@ import WhatWeDo from "../components/Header/Home/WhatWeDo";
 import SuccessStories from "../components/Header/Home/SuccessStories";
 import Layout from "../components/Layout";
 import RightSection from "../components/General/RightSection";
+import MyCarousel1 from "../components/Header/MyCarousel1";
 
 class Index extends Component {
   state = {};
   render() {
+    const stages = [
+      {
+        name: "INTERNATIONAL HEADHUNTING",
+        stageContent: "Sed ut perspiciatis unde omnis iste natus",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+      },
+      {
+        name: "INTERNATIONAL STUDENTS",
+        stageContent: "Sed ut perspiciatis unde omnis iste natus",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+      },
+      {
+        name: "INTERNATIONAL BUSINESS ADVISORY",
+        stageContent: "Sed ut perspiciatis unde omnis iste natus",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+      }
+    ];
     return (
       <Layout title="Home :: CHISLON">
         <div
           style={{
-            backgroundImage: "url(/static/header.png)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "0 0",
-            backgroundSize: "cover",
             height: "100vh",
             textAlign: "center"
           }}
         >
           <Header />
-          <MyCarousel />
+          <MyCarousel1 />
         </div>
         <div className="container" style={{ padding: "100px 0px" }}>
-          <Row>
-            <Col md={8}>
-              <h1 style={{  color: "#0069D2" }}>
-                INTERNATIONAL HEADHUNTING
-              </h1>
-              <h5>We offer global mobility services</h5>
-              <p>
-                Ut porttitor ut est eu ornare. In metus dui, suscipit at viverra
-                faucibus, accumsan at odio. Duis finibus sollicitudin libero,
-                sed tempor diam euismod sed. Sed interdum odio a finibus
-                gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper
-                scelerisque magna vulputate. Duis finibus sollicitudin libero,
-                sed tempor diam euismod sed. Sed interdum odio a finibus
-                gravida. Aliquam tincidunt nisl nec urna euismodl nec. Duis
-                finibus sollicitudin libero, sed tempor diam euismod sed. Sed
-                interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna
-                euismod, ullamcorper scelerisque magna vulputate. Duis finibus
-                sollicitudin libero, sed tempor diam euismod sed. Sed interdum
-                odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl
-                nec.
-              </p>
-            </Col>
-            <Col md={4}>
-              {/* <img
-                src="/static/homeLeft.png"
-                alt=""
-                style={{ width: "100%" }}
-              /> */}
-                <RightSection />
-            </Col>
-          </Row>
-          <br/>
-          <Row>
-            <Col md={7}>
-              <img
-                src="/static/homeLeft.png"
-                alt=""
-                style={{ width: "100%" }}
-              />
-            </Col>
-            <Col md={5}>
-              <h2 style={{  color: "#0069D2" }}>
-                INTERNATIONAL VISA ASSISTANCE
-              </h2>
-              <h5>We offer global mobility services</h5>
-              <p>
-                Ut porttitor ut est eu ornare. In metus dui, suscipit at viverra
-                faucibus, accumsan at odio. Duis finibus sollicitudin libero,
-                sed tempor diam euismod sed. Sed interdum odio a finibus
-                gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper
-                scelerisque magna vulputate. Duis finibus sollicitudin libero,
-                sed tempor diam euismod sed. Sed interdum odio a finibus
-                gravida. Aliquam tincidunt nisl nec urna euismodl nec. Duis
-                finibus sollicitudin libero, sed tempor diam euismod sed. Sed
-                interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna
-                euismod, ullamcorper scelerisque magna vulputate. Duis finibus
-                sollicitudin libero, sed tempor diam euismod sed. Sed interdum
-                odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl
-                nec.
-              </p>
-            </Col>
-            
-          </Row>
+          <div className="container">
+            {stages.map(stage => {
+              return (
+                <Row style={{ padding: "50px 0px" }}>
+                  <Col md={6}>
+                    <h2>{stage.name}</h2>
+                    <h5>We offer global mobility services</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quasi deserunt cum odio tempora tempore! Magnam minima
+                      quos obcaecati, possimus illo atque impedit cupiditate
+                      dicta repudiandae laborum deleniti vitae suscipit amet?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quasi deserunt cum odio tempora tempore! Magnam minima
+                      quos obcaecati, possimus illo atque impedit cupiditate
+                      dicta repudiandae laborum deleniti vitae suscipit amet?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quasi deserunt cum odio tempora tempore! Magnam minima
+                      quos obcaecati, possimus illo atque impedit cupiditate
+                      dicta repudiandae laborum deleniti vitae suscipit amet?
+                    </p>
+                  </Col>
+                  <Col md={1} sm={0}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        height: "100%",
+                        fontSize: "3em"
+                      }}
+                    >
+                      🠊
+                    </div>
+                  </Col>
+                  <Col md={5}>
+                    <p
+                      style={{
+                        borderTop: "8px solid #CEA600",
+                        padding: "10px 15px",
+                        boxSizing: "border-box",
+                        textAlign: "center",
+                        backgroundColor: "#F8F7F5"
+                      }}
+                    >
+                      <h3>Title Here</h3>
+                      <img
+                        src="/static/home1.png"
+                        style={{ width: "100%", height: "50&" }}
+                      />
+                    </p>
+                  </Col>
+                </Row>
+              );
+            })}
+          </div>
         </div>
         <WhatWeDo />
-        <SuccessStories />
+        {/* <SuccessStories /> */}
       </Layout>
     );
   }

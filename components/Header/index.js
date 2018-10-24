@@ -53,7 +53,14 @@ export default class extends Component {
         <style jsx>
           {`
             .navHolder {
-              padding-top: 40px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              position : absolute ;
+              margin : auto ;
+              left : 15% ;
+              top : 0px ;
+              z-index : 1 ;
+              background-color : rgba(0,0,0,0.4);
             }
             .logo a img {
               width: 300px;

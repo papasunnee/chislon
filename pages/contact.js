@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import { Button, Form, FormGroup, Input } from "reactstrap";
 import GetStarted from "../components/General/GetStarted";
 import PageHeader from "../components/General/PageHeader";
-import AboutRow2 from "../components/About/AboutRow2";
 
 class Contact extends Component {
   state = {};

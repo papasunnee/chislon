@@ -8,26 +8,23 @@ import {
   AccordionItemBody
 } from "react-accessible-accordion";
 
-const MyAccordion = () => (
+const MyAccordion = props => (
   <Accordion style={{ margin: "20px auto" }}>
-    <AccordionItem>
-      <AccordionItemTitle>
-        <h5>UK Five Tier Points-Based Immigration System</h5>
-        {/* <div>With a bit of description</div> */}
-      </AccordionItemTitle>
-      <AccordionItemBody>
-        <p>
-          The United Kingdom's points-based 5 tier visa system is the main uk
-          immigration route for migrants from outside the European Economic Area
-          (EEA) to come to the UK to work, study, invest or train. The system
-          separates applicants into five 'tiers'. In order to be eligible for a
-          visa in any of the five tiers you must pass a points-based assessment.
-          In work visa applications, points are generally awarded according to
-          the applicant's ability, experience...Read more
-        </p>
-      </AccordionItemBody>
-    </AccordionItem>
-    <AccordionItem>
+    {props.details.map(({ title, message }) => {
+      return (
+        <AccordionItem>
+          <AccordionItemTitle>
+            <h5>{title}</h5>
+            {/* <div>With a bit of description</div> */}
+          </AccordionItemTitle>
+          <AccordionItemBody>
+            <p>{message}</p>
+          </AccordionItemBody>
+        </AccordionItem>
+      );
+    })}
+
+    {/* <AccordionItem>
       <AccordionItemTitle>
         <h5>Non Tier UK Business visas</h5>
       </AccordionItemTitle>
@@ -128,7 +125,7 @@ const MyAccordion = () => (
           to Remain Citizenship and Naturalisation in UK Long Residence in UK
         </p>
       </AccordionItemBody>
-    </AccordionItem>
+    </AccordionItem> */}
   </Accordion>
 );
 

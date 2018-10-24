@@ -12,7 +12,7 @@ export default class Immigration extends Component {
           <Container>
             <Row>
               <Col md={12} style={{ textAlign: "center" }}>
-                <h2>IMMIGRATION OPPORTUNITIES</h2>
+                <h2>LATEST IMMIGRATION NEWS</h2>
               </Col>
             </Row>
             <Row>

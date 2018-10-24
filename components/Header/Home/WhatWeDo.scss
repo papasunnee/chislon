@@ -2,8 +2,11 @@
 
 .whatwedo {
   padding: 70px 0px;
-  background-color: $grey;
+  background-color: #e6eaf4;
   text-align: center;
+  p {
+    text-align: left;
+  }
   h1 {
     span {
       padding-bottom: 2px;

@@ -58,11 +58,6 @@ export default class SuccessStories extends Component {
               })}
             </Row>
 
-            <Row>
-              <Col md={12}>
-                <GetStarted />
-              </Col>
-            </Row>
           </Container>
         </div>
       </Fragment>
