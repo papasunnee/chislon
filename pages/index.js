@@ -16,19 +16,22 @@ class Index extends Component {
         name: "INTERNATIONAL HEADHUNTING",
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
+          imageUrl: "/static/hh.jpg"
       },
       {
         name: "INTERNATIONAL STUDENTS",
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
+          imageUrl: "/static/home1.png"
       },
       {
         name: "INTERNATIONAL BUSINESS ADVISORY",
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos."
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
+          imageUrl: "/static/iba.jpg"
       }
     ];
     return (
@@ -94,8 +97,8 @@ class Index extends Component {
                     >
                       <h3>Title Here</h3>
                       <img
-                        src="/static/home1.png"
-                        style={{ width: "100%", height: "50&" }}
+                        src={stage.imageUrl}
+                        style={{ width: "100%"}}
                       />
                     </p>
                   </Col>
@@ -105,7 +108,15 @@ class Index extends Component {
           </div>
         </div>
         <WhatWeDo />
-        {/* <SuccessStories /> */}
+        <style jsx>{`
+            img{
+              transition : 0.5s ;
+            }
+            img:hover{
+              filter : grayscale(50%) ;
+            }
+          `}
+        </style>
       </Layout>
     );
   }
