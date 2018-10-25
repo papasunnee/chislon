@@ -3,6 +3,7 @@ import { Row, Col } from "reactstrap";
 import Header from "../components/Header";
 import WhatWeDo from "../components/Header/Home/WhatWeDo";
 import Layout from "../components/Layout";
+import Immigration from "../components/General/Immigration";
 import MyCarousel from "../components/Header/MyCarousel";
 import MyCarousel1 from "../components/Header/MyCarousel1";
 
@@ -112,6 +113,7 @@ class Index extends Component {
           </div>
         </div>
         <WhatWeDo />
+        <Immigration />
         <style jsx>
           {`
             img {

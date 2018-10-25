@@ -34,12 +34,12 @@ class About extends Component {
             quo quos."
         />
         <div className="container">
-          <AboutRow title="Business & Investment" image="business" />
-          <AboutRow2 title="Professional Work" image="professional" />
-          <AboutRow title="Education" image="education" />
-          <AboutRow2 title="Sports & Entertainment" image="sports" />
-          <AboutRow title="Medical Treatment" image="medical" />
-          <AboutRow2 title="Holidays & Leisure" image="holiday" />
+          <AboutRow title="Business & Investment" image="business" url="/services/business-investment" />
+          <AboutRow2 title="Professional Work" image="professional" url="/services/professional-work" />
+          <AboutRow title="Education" image="education" url="/services/education"/>
+          <AboutRow2 title="Sports & Entertainment" image="sports" url="/services/sports-and-entertainment" />
+          <AboutRow title="Medical Treatment" image="medical" url="/services/medical-treatment" />
+          <AboutRow2 title="Holidays & Leisure" image="holiday" url="/services/holiday-and-leisure" />
         </div>
       </Layout>
     );

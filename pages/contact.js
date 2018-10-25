@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import Layout from "../components/Layout";
 import { Button, Form, FormGroup, Input } from "reactstrap";
-import GetStarted from "../components/General/GetStarted";
 import PageHeader from "../components/General/PageHeader";
 
 class Contact extends Component {
@@ -127,7 +126,6 @@ class Contact extends Component {
           </div>
           <br />
           <br />
-          <GetStarted />
         </div>
       </Layout>
     );

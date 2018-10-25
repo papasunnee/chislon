@@ -6,7 +6,7 @@ const AboutRow = props => {
   return (
     <Row style={{ padding: "50px 0px" }}>
       <Col md={6}>
-      <Link href="">
+      <Link href={props.url}>
       <a>
         <h1
           style={{

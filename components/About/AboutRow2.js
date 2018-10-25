@@ -12,7 +12,7 @@ const AboutRow2 = props => {
         />
       </Col>
       <Col md={6}>
-      <Link href="">
+      <Link href={props.url}>
       <a>
         <h1
           style={{
