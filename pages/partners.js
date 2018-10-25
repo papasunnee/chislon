@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
 import Layout from "../components/Layout";
-import GetStarted from "../components/General/GetStarted";
+import TextContent from "../components/General/TextContent";
 import PageHeader from "../components/General/PageHeader";
 
 class News extends Component {
@@ -32,33 +32,10 @@ class News extends Component {
             veniam autem sed quae deleniti eveniet atque nemo enim, repellendus
             quo quos."
         />
-        <div className="container" style={{ display: "block" }}>
-          <div className="row">
-            <div className="col-md-4">
-              <LatestNews image="1" />
-            </div>
-            <div className="col-md-4">
-              <LatestNews image="2" />
-            </div>
-            <div className="col-md-4">
-              <LatestNews image="3" />
-            </div>
-          </div>
-          <br />
-          <div className="row">
-            <div className="col-md-4">
-              <LatestNews image="1" />
-            </div>
-            <div className="col-md-4">
-              <LatestNews image="2" />
-            </div>
-            <div className="col-md-4">
-              <LatestNews image="3" />
-            </div>
-          </div>
-          <br />
-          <br />
-        </div>
+
+        <TextContent />
+        <br />
+        <br />
       </Layout>
     );
   }

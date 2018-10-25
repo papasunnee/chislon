@@ -12,7 +12,7 @@ export default class WhatWeDo extends Component {
             <Row>
               <Col md={12}>
                 <h1 style={{ marginBottom: "30px" }}>
-                  STUDY, GET A JOB AND STRAT A BUSINESS IN
+                  STUDY, GET A JOB AND START A BUSINESS IN
                 </h1>
               </Col>
             </Row>
@@ -43,18 +43,6 @@ export default class WhatWeDo extends Component {
               </Col>
               <Col md={3}>
                 <div className="">
-                  <Link href="/country/canada">
-                    <a>
-                      <img
-                        src="/static/country/canada2.jpg"
-                        style={{ width: "100%" }}
-                      />
-                    </a>
-                  </Link>
-                </div>
-              </Col>
-              <Col md={3}>
-                <div className="">
                   <Link href="/country/australia">
                     <a>
                       <img
@@ -65,6 +53,19 @@ export default class WhatWeDo extends Component {
                   </Link>
                 </div>
               </Col>
+              <Col md={3}>
+                <div className="">
+                  <Link href="/country/canada">
+                    <a>
+                      <img
+                        src="/static/country/canada2.jpg"
+                        style={{ width: "100%" }}
+                      />
+                    </a>
+                  </Link>
+                </div>
+              </Col>
+              
             </Row>
           </Container>
         </div>

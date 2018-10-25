@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
 import { Button, Form, FormGroup, Input } from "reactstrap";
-import RightSection from "../../components/General/RightSection";
+import Link from "next/link";
 import PageHeader from "../../components/General/PageHeader";
 import MyAccordion from "../../components/Country/MyAccordion";
 
@@ -107,7 +107,39 @@ class USA extends Component {
               </div>
             </div>
             <div className="col-md-4">
-              <RightSection />
+              <div>
+                <h4>Study, Get a Job and Start a business in</h4>
+              </div>
+              <div className="">
+                <Link href="/country/uk">
+                  <a>
+                    <img
+                      src="/static/country/uk2.jpg"
+                      style={{ width: "100%" }}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="">
+                <Link href="/country/canada">
+                  <a>
+                    <img
+                      src="/static/country/canada2.jpg"
+                      style={{ width: "100%" }}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="">
+                <Link href="/country/australia">
+                  <a>
+                    <img
+                      src="/static/country/australia2.jpg"
+                      style={{ width: "100%" }}
+                    />
+                  </a>
+                </Link>
+              </div>
               <div
                 style={{
                   width: "100%",
@@ -172,6 +204,17 @@ class USA extends Component {
             </div>
           </div>
         </div>
+        <style jsx>
+          {`
+            img {
+              transition: 0.5s;
+              margin: 10px auto;
+            }
+            img:hover {
+              filter: grayscale(50%);
+            }
+          `}
+        </style>
       </Layout>
     );
   }
