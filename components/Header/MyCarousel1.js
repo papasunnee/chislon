@@ -10,23 +10,23 @@ import {
 const items = [
   {
     src: '/static/1.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    altText: 'THE FUTURE IS EXCITING',
+    caption: 'THE FUTURE IS EXCITING'
   },
   {
     src: '/static/2.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: 'REALIZE AND POWER YOUR DREAM',
+    caption: 'REALIZE AND POWER YOUR DREAM'
   },
   {
     src: '/static/3.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'TAKE YOUR CAREER TO THE GLOBAL STAGE',
+    caption: 'TAKE YOUR CAREER TO THE GLOBAL STAGE'
   },
   {
     src: '/static/4.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: 'BECOME A GLOBAL CITIZEN',
+    caption: 'BECOME A GLOBAL CITIZEN'
   }
 ];
 
@@ -77,7 +77,7 @@ class MyCarousel1 extends Component {
           key={item.src}
         >
           <img src={item.src} alt={item.altText} style={{width : "100%", height : "100vh"}} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption  captionHeader={item.caption} />
         </CarouselItem>
       );
     });

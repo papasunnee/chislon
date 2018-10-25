@@ -3,6 +3,7 @@ import { Row, Col } from "reactstrap";
 import Header from "../components/Header";
 import WhatWeDo from "../components/Header/Home/WhatWeDo";
 import Layout from "../components/Layout";
+import MyCarousel from "../components/Header/MyCarousel";
 import MyCarousel1 from "../components/Header/MyCarousel1";
 
 class Index extends Component {
@@ -14,25 +15,24 @@ class Index extends Component {
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
-          imageUrl: "/static/hh.jpg",
-          imageTitle: "WORK VISAS"
+        imageUrl: "/static/hh.jpg",
+        imageTitle: "WORK VISAS"
       },
       {
         name: "INTERNATIONAL STUDENTS",
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
-          imageUrl: "/static/home1.png",
-          imageTitle : "Student Visas"
-
+        imageUrl: "/static/home1.png",
+        imageTitle: "Student Visas"
       },
       {
         name: "INTERNATIONAL BUSINESS ADVISORY",
         stageContent: "Sed ut perspiciatis unde omnis iste natus",
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos. A, adipisci expedita deserunt id in molestiae consectetur quam dolorum veniam autem sed quae deleniti eveniet atque nemo enim, repellendus quo quos.",
-          imageUrl: "/static/iba.jpg",
-          imageTitle : "Investor Visas"
+        imageUrl: "/static/iba.jpg",
+        imageTitle: "Investor Visas"
       }
     ];
     return (
@@ -44,6 +44,7 @@ class Index extends Component {
           }}
         >
           <Header />
+          {/* <MyCarousel /> */}
           <MyCarousel1 />
         </div>
         <div className="container" style={{ padding: "100px 0px" }}>
@@ -97,11 +98,12 @@ class Index extends Component {
                         backgroundColor: "#F8F7F5"
                       }}
                     >
-                      <h3 style={{color : "#3b5998", textTransform : "uppercase"}}>{stage.imageTitle || "Title Here"}</h3>
-                      <img
-                        src={stage.imageUrl}
-                        style={{ width: "100%"}}
-                      />
+                      <h3
+                        style={{ color: "#3b5998", textTransform: "uppercase" }}
+                      >
+                        {stage.imageTitle || "Title Here"}
+                      </h3>
+                      <img src={stage.imageUrl} style={{ width: "100%" }} />
                     </p>
                   </Col>
                 </Row>
@@ -110,12 +112,13 @@ class Index extends Component {
           </div>
         </div>
         <WhatWeDo />
-        <style jsx>{`
-            img{
-              transition : 0.5s ;
+        <style jsx>
+          {`
+            img {
+              transition: 0.5s;
             }
-            img:hover{
-              filter : grayscale(50%) ;
+            img:hover {
+              filter: grayscale(50%);
             }
           `}
         </style>
