@@ -12,11 +12,11 @@ class News extends Component {
       <Layout title="Latest News :: CHISLON">
         <div
           style={{
-            backgroundImage: "url(/static/latestnews.png)",
+            backgroundImage: "url(/static/partnership.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
             backgroundSize: "cover",
-            height: "30vh",
+            height: "50vh",
             textAlign: "center"
           }}
         >
@@ -33,7 +33,7 @@ class News extends Component {
             quo quos."
         />
 
-        <TextContent />
+        <TextContent  image="partnership2.jpg"/>
         <br />
         <br />
       </Layout>
