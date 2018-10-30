@@ -98,7 +98,7 @@ class Canada extends Component {
             </div>
             <div className="col-md-4">
               <div>
-                <h4>Study, Get a Job and Start a business in</h4>
+                <h4>Study, Get a Job or Start a business in</h4>
               </div>
               <div className="">
                 <Link href="/country/usa">

@@ -12,7 +12,7 @@ export default class WhatWeDo extends Component {
             <Row>
               <Col md={12}>
                 <h1 style={{ marginBottom: "30px" }}>
-                  STUDY, GET A JOB AND START A BUSINESS IN
+                  STUDY, GET A JOB OR START A BUSINESS IN
                 </h1>
               </Col>
             </Row>
