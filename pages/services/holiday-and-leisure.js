@@ -31,7 +31,7 @@ class BusinessInvestment extends Component {
             veniam autem sed quae deleniti eveniet atque nemo enim, repellendus
             quo quos."
         />
-        <TextContent />
+        <TextContent image="holiday2.jpg" />
       </Layout>
     );
   }

@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Layout from "../components/Layout";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import PageHeader from "../components/General/PageHeader";
+import CustomSlider from "../components/Header/CustomSlider";
 
 class Contact extends Component {
   state = {};
@@ -34,6 +35,7 @@ class Contact extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
+            <CustomSlider />
               <div>
                 <p>
                   Telephone Number:

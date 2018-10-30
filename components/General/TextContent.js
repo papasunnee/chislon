@@ -73,29 +73,10 @@ export default class extends Component {
             <div
               className="col-md-6"
               style={{
-                padding: "15px",
-                boxSizing: "border-box",
-                border: "1px solid #e5e5e5"
+                boxSizing: "border-box"
               }}
             >
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis quibusdam ad ab, recusandae numquam, distinctio nesciunt
-                aut quam vitae placeat praesentium ducimus reiciendis, hic
-                voluptate ex temporibus tempore blanditiis ratione!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis quibusdam ad ab, recusandae numquam, distinctio nesciunt
-                aut quam vitae placeat praesentium ducimus reiciendis, hic
-                voluptate ex temporibus tempore blanditiis ratione!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis quibusdam ad ab, recusandae numquam, distinctio nesciunt
-                aut quam vitae placeat praesentium ducimus reiciendis, hic
-                voluptate ex temporibus tempore blanditiis ratione!
-              </p>
+              <img className="serviceImage" src={`/static/about/${this.props.image}`} />
             </div>
             <div
               className="col-md-6"
@@ -103,7 +84,6 @@ export default class extends Component {
                 padding: "15px",
                 boxSizing: "border-box",
                 border: "1px solid #e5e5e5",
-                width: "100%",
                 backgroundColor: "#F8F7F5"
               }}
             >
@@ -159,6 +139,13 @@ export default class extends Component {
         <style jsx>{`
           .row {
             margin: 40px 0px;
+          }
+          .serviceImage{
+            transition : 0.5s ;
+            width : 100%;
+          }
+          .serviceImage:hover{
+            filter : grayscale(50%) ;
           }
         `}</style>
       </div>

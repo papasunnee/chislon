@@ -50,11 +50,11 @@ class Canada extends Component {
       <Layout title="Canada">
         <div
           style={{
-            backgroundImage: "url(/static/about.png)",
+            backgroundImage: "url(/static/country/canada-h.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
-            backgroundSize: "cover",
-            height: "30vh",
+            backgroundSize: "100% 100%",
+            height: "50vh",
             textAlign: "center"
           }}
         >

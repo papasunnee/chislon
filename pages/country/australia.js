@@ -55,11 +55,11 @@ class Australia extends Component {
       <Layout title="Australia">
         <div
           style={{
-            backgroundImage: "url(/static/about.png)",
+            backgroundImage: "url(/static/country/australia-h.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
-            backgroundSize: "cover",
-            height: "30vh",
+            backgroundSize: "100% 100%",
+            height: "50vh",
             textAlign: "center"
           }}
         >

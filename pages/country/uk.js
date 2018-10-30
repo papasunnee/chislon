@@ -55,11 +55,11 @@ class UK extends Component {
       <Layout title="United Kingdom">
         <div
           style={{
-            backgroundImage: "url(/static/about.png)",
+            backgroundImage: "url(/static/country/uk-h.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
-            backgroundSize: "cover",
-            height: "30vh",
+            backgroundSize: "100% 100%",
+            height: "50vh",
             textAlign: "center"
           }}
         >

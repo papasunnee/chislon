@@ -31,7 +31,7 @@ class Education extends Component {
             veniam autem sed quae deleniti eveniet atque nemo enim, repellendus
             quo quos."
         />
-        <TextContent />
+        <TextContent image="education2.jpg" />
       </Layout>
     );
   }

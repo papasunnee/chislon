@@ -60,11 +60,11 @@ class USA extends Component {
       <Layout title="USA">
         <div
           style={{
-            backgroundImage: "url(/static/about.png)",
+            backgroundImage: "url(/static/country/usa-h.jpg)",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0 0",
-            backgroundSize: "cover",
-            height: "30vh",
+            backgroundSize: "100% 100%",
+            height: "50vh",
             textAlign: "center"
           }}
         >

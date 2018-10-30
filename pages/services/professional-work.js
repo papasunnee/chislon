@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
-import AboutRow from "../../components/About/AboutRow";
 import PageHeader from "../../components/General/PageHeader";
-import AboutRow2 from "../../components/About/AboutRow2";
 import TextContent from "../../components/General/TextContent";
 
 class ProfessionalWork extends Component {
@@ -33,7 +31,7 @@ class ProfessionalWork extends Component {
             veniam autem sed quae deleniti eveniet atque nemo enim, repellendus
             quo quos."
         />
-        <TextContent />
+        <TextContent image="professional2.jpg" />
       </Layout>
     );
   }
