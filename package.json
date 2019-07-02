@@ -7,14 +7,53 @@
   "author": "Adetona Sunday <papasunnee@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "next src -p 6767",
+    "build": "next build src",
     "preexport": "npm run build",
-    "export": "next export",
-    "start": "next start -p $PORT",
+    "export": "next export src -o ./out",
+    "start": "next start src -p $PORT",
     "start-win": "next start",
     "heroku-postbuild": "next build"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reactstrap": "^8.0.0",
+    "styled-components": "^4.3.2"
+  },
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      }
+    }
   }
 }
