@@ -19,8 +19,7 @@ const Menus = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Latest News", href: "/latest-news" },
-  { label: "Contact", href: "/contact" },
-  { label: "Login", href: "/login" }
+  { label: "Contact", href: "/contact" }
 ];
 
 const Index = () => {
@@ -32,19 +31,26 @@ const Index = () => {
   return (
     <div>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">Chislon Broadway</NavbarBrand>
+        <NavbarBrand href="/">
+          <img src="/static/images/whitelogo.png" className="img-fluid" />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            {Menus.map(menu => {
+            {Menus.map(({ href, label }, index) => {
               return (
-                <NavItem>
-                  <Link href={menu.href} passHref>
-                    <NavLink>{menu.label}</NavLink>
+                <NavItem key={index}>
+                  <Link href={href} passHref>
+                    <NavLink>{label}</NavLink>
                   </Link>
                 </NavItem>
               );
             })}
+            <NavItem className="">
+              <Link href="/login" passHref>
+                <NavLink style={{ color: "red" }}>Login</NavLink>
+              </Link>
+            </NavItem>
             {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Options

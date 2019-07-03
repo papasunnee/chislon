@@ -3,3 +3,17 @@
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-item {
+  max-height: 80vh !important;
+}
+
+img {
+  width: 100%;
+}

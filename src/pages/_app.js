@@ -7,13 +7,7 @@ const theme = {
   colors: {
     black: "#212121",
     white: "#FFFFFF",
-    primary: "#0070f3",
-    secondary: "#FFE17D",
-    darkGreen: "#003DA1",
-    lightGreen: "#12890E",
-    lightAsh: "#DADADA",
-    darkAsh: "#505050",
-    lightBlue: "#003DA1"
+    yellow: "#FFDA42"
   }
 };
 
@@ -31,7 +25,6 @@ html{
     padding : 0 ;
     margin : 0 ;
     font-size : 15px ;
-    font-family: "Georgia Regular";
     font-weight : 200 ;
     color : ${props => props.theme.colors.black};
   }
@@ -41,6 +34,9 @@ html{
   a,a:visited{
     text-decoration: none;
     color : ${props => props.theme.colors.black};
+  }
+  p{
+    font-family: "Georgia Regular";
   }
 `;
 
