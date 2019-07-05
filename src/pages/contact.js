@@ -1,12 +1,13 @@
-import React from "react";
-import Ourwork from "../components/Ourwork/Ourwork";
+import React, { Fragment } from "react";
+import ContactJumbotron from "../components/Contact/Jumbotron";
+import ServiceLists from "../components/Services/ServiceLists";
 
-const Index = () => {
+const Contact = () => {
   return (
-    <div>
-      {/* <h1>Contact</h1> */}
-      <Ourwork />
-    </div>
+    <Fragment>
+      <ContactJumbotron />
+      <ServiceLists />
+    </Fragment>
   );
 };
-export default Index;
+export default Contact;
