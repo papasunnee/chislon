@@ -1,10 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+import AboutJumbotron from "../components/About/Jumbotron";
+import Download from "../components/About/Download";
+import Study from "../components/About/Study";
 
 const Index = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <Fragment>
+      <AboutJumbotron />
+      <Download />
+      <Study />
+    </Fragment>
   );
 };
 export default Index;

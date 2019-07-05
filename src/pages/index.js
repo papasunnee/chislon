@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Carousel from "../components/Carousel";
-import Jumbotron from "../components/Jumbotron";
 import Study from "../components/Home/Study";
 import CategoryRow from "../components/Home/CategoryRow";
 import VideoSection from "../components/Home/VideoSection";
@@ -13,7 +12,6 @@ const Index = () => {
     <Fragment>
       <Carousel />
       <Study />
-      {/* <Jumbotron /> */}
       <CategoryRow />
       <VideoSection />
       <Events />
