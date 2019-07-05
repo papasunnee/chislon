@@ -20,6 +20,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "next": "^8.1.0",
     "react": "^16.8.6",
+    "react-calendar": "^2.19.0",
     "react-dom": "^16.8.6",
     "react-player": "^1.11.1",
     "reactstrap": "^8.0.0",

@@ -5,6 +5,8 @@ import Study from "../components/Home/Study";
 import CategoryRow from "../components/Home/CategoryRow";
 import VideoSection from "../components/Home/VideoSection";
 import Events from "../components/Home/Events";
+import Immigrations from "../components/Home/Immigrations";
+import Destinations from "../components/Home/Destinations";
 
 const Index = () => {
   return (
@@ -15,6 +17,8 @@ const Index = () => {
       <CategoryRow />
       <VideoSection />
       <Events />
+      <Immigrations />
+      <Destinations />
     </Fragment>
   );
 };
