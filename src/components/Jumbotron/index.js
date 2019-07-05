@@ -1,27 +1,32 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Jumbotron, Button } from "reactstrap";
 
 const Index = props => {
   return (
-    <Jumbotron>
-      <div className="title">{props.title || "ABOUT US"}</div>
-      {props.children}
+    <Fragment>
+      <Jumbotron>
+        <div className="title">{props.title || "ABOUT US"}</div>
+        {props.children}
+      </Jumbotron>
       <style jsx>
         {`
           .title {
             position: absolute;
             top: 30px;
+            background-color: #cea600;
             left: 0;
             padding: 5px 10px;
             width: 200px;
             text-align: center;
             color: #fff;
-            background-color: #cea600;
             font-weight: 600;
+          }
+          .jumbotron {
+            background-image: url(/static/images/contact/contact.jpg) !important;
           }
         `}
       </style>
-    </Jumbotron>
+    </Fragment>
   );
 };
 
