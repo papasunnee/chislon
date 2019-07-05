@@ -1,9 +1,28 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from "reactstrap";
 import Link from "next/link";
 
 import "./index.scss";
 
+const Footerlinks = [
+  { label: "Privacy Policy", href: "/" },
+  { label: "Disclaimer", href: "/about" },
+  { label: "Cookie Policy", href: "/services" }
+];
+
 const Index = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Fragment>
       <div className="footer">
@@ -55,10 +74,11 @@ const Index = () => {
         </nav>
       </div>
       <div className="copyright">
-        <p>
+        {/* <p>
           Copyright 2019 <span>Chislon Broadway Visa Services</span> All Rights
           Reserved
-          <ul>
+        </p> */}
+        {/* <ul>
             <li>
               <Link href="">
                 <a> Privacy Policy</a>
@@ -74,8 +94,35 @@ const Index = () => {
                 <a> Cookie Policy</a>
               </Link>
             </li>
-          </ul>
-        </p>
+          </ul> */}
+        <div className="cow">
+          <p>
+            Copyright 2019 <span>Chislon Broadway Visa Services</span> All
+            Rights Reserved
+          </p>
+          {Footerlinks.map(({ href, label }, index) => {
+            return (
+              <div className="copyright-links">
+                <NavItem key={index}>
+                  <Link href={href} passHref>
+                    <NavLink className="copyright-link">{label}</NavLink>
+                  </Link>
+                </NavItem>
+              </div>
+            );
+          })}
+        </div>
+        {/* <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>Option 1</DropdownItem>
+                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Reset</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown> */}
       </div>
     </Fragment>
   );
