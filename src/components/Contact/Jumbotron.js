@@ -39,15 +39,17 @@ const ContactJumbotron = () => {
           color: #fff;
         }
         .title {
-          background-color: #cea600;
-          padding: 5px 10px;
+          background-color: #ffda42;
+          padding: 3px 10px;
           width: 200px;
           color: #fff;
-          font-weight: 600;
+          font-weight: 300;
           color: #000;
+          clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
         }
         .title + p {
           margin-left: 20px;
+          font-size: 1.3rem;
         }
       `}</style>
     </Jumbotron>

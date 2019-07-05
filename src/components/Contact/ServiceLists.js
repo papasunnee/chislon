@@ -3,42 +3,68 @@ import Link from "next/link";
 import { Row, Col } from "reactstrap";
 import SectionStyle from "../styles/SectionStyle";
 import Heading3Style from "../styles/Heading3";
+import ButtonStyle from "../styles/ButtonStyle";
 
 const Study = () => {
   return (
     <SectionStyle className="serviceSectionStyle">
       <Row>
         <Col md={12}>
-          <Row>
-            {Services.map(({ image, text }, index) => {
-              return (
-                <Col md={4}>
-                  <div className="flexPanel" key={index}>
-                    <img
-                      className="img-fluid"
-                      src={`/static/images/services/${image}`}
-                      alt="No Image"
-                    />
-                    <div>
-                      <Heading3Style>{text}</Heading3Style>
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quasi deserunt cum odio tempora tempore! Magnam
-                        minima quos obcaecati, possimus illo atque impedit
-                        cupiditate dicta repudiandae laborum deleniti vitae
-                        suscipit amet.
-                      </p>
-                      <p>
-                        <Link href="">
-                          <a className="readMore">Read More</a>
-                        </Link>
-                      </p>
-                    </div>
+          <div className="formWrapper">
+            <Heading3Style>Enquiry Form</Heading3Style>
+            <p>Send us a message</p>
+            <form>
+              <Row>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>First Name</label>
+                    <input type="text" className="form-control" />
                   </div>
                 </Col>
-              );
-            })}
-          </Row>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>Last Name</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                </Col>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                </Col>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>Your Email</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                </Col>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>Country of Residence</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                </Col>
+                <Col sm={12} md={6}>
+                  <div className="form-group">
+                    <label>Select Service</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                </Col>
+                <Col md={12}>
+                  <div className="form-group">
+                    <label>Your Message</label>
+                    <textarea className="form-control" />
+                  </div>
+                </Col>
+                <Col md={12}>
+                  <div className="form-group text-center">
+                    <ButtonStyle>SEND MESSAGE</ButtonStyle>
+                  </div>
+                </Col>
+              </Row>
+            </form>
+          </div>
         </Col>
       </Row>
       <style>
@@ -47,23 +73,22 @@ const Study = () => {
           padding : 5rem 3rem ;
           background-color: #f2f2f2 ;
         }
-        span{
-          color : #FFDA42 ;
-          text-transform : uppercase ;
+       .formWrapper{
+         max-width : 500px ;
+         margin : 20px auto ;
+         background-color : #e5e5e5 ;
+         padding : 30px ;
         }
-        .flexPanel{
-         
+        .formWrapper label{
+          display : block ;
         }
-        .flexPanel img{
-          margin: 10px 0 ;
+        textarea,
+        textarea:focus{
+          resize : none ;
+          outline:none ;
+          box-shadow: none;
         }
-        .readMore, .readMore:hover{
-            float : right ;
-            background-color : #e5e5e5 ;
-            padding : 5px 15px ;
-            border-radius : 5px ;
-            text-decoration : none ;
-        }
+
       `}
       </style>
     </SectionStyle>

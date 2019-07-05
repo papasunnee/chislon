@@ -20,6 +20,7 @@ const Index = props => {
             text-align: center;
             color: #fff;
             font-weight: 600;
+            clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
           }
           .jumbotron {
             background-image: url(/static/images/contact/contact.jpg) !important;
