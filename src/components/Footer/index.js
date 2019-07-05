@@ -11,42 +11,42 @@ const Index = () => {
           <h5>Quick Access ></h5>
           <ul className="footerMenu">
             <li>
-              <Link href="" prefetch>
+              <Link href="/" prefetch>
                 <a>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="/about" prefetch>
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="how-we-work" prefetch>
                 <a>How We Work</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="partners" prefetch>
                 <a>Partners</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="/services" prefetch>
                 <a>Services</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="/latest-news" prefetch>
                 <a>Latest News</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="/contact" prefetch>
                 <a>Contact</a>
               </Link>
             </li>
             <li>
-              <Link href="" prefetch>
+              <Link href="/faqs" prefetch>
                 <a>FAQs</a>
               </Link>
             </li>
@@ -60,17 +60,17 @@ const Index = () => {
           Reserved
           <ul>
             <li>
-              <Link href="">
+              <Link href="/privacy-policy">
                 <a> Privacy Policy</a>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="/disclaimer">
                 <a> Disclaimer</a>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="/cookie-policy">
                 <a> Cookie Policy</a>
               </Link>
             </li>
