@@ -3,3 +3,25 @@
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-item {
+  max-height: 80vh !important;
+}
+
+img {
+  width: 100%;
+}
+
+.jumbotron {
+  background-image: linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
+  border-radius: 0;
+  position: relative;
+  margin: 0;
+  min-height: 80vh;
+}

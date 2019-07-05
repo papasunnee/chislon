@@ -1,14 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Carousel from "../components/Carousel";
+import Study from "../components/Home/Study";
+import CategoryRow from "../components/Home/CategoryRow";
+import VideoSection from "../components/Home/VideoSection";
+import Events from "../components/Home/Events";
+import Immigrations from "../components/Home/Immigrations";
+import Destinations from "../components/Home/Destinations";
 
 const Index = () => {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laborum,
-        soluta autem atque eos non ea asperiores cum nihil magni illo eius
-        provident nobis voluptates optio dicta reprehenderit? Dolorum, nostrum.
-      </p>
-    </div>
+    <Fragment>
+      <Carousel />
+      <Study />
+      <CategoryRow />
+      <VideoSection />
+      <Events />
+      <Immigrations />
+      <Destinations />
+    </Fragment>
   );
 };
 export default Index;

@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 
 const Index = props => {
   return (
@@ -7,6 +8,7 @@ const Index = props => {
       <div className="container-fluid p-0">
         <NavBar />
         {props.children}
+        <Footer />
       </div>
     </Fragment>
   );
