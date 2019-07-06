@@ -1,4 +1,3 @@
-import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
@@ -38,8 +37,9 @@ export default class MyDocument extends Document {
           />
           <link href="/static/css/bootstrap.css" rel="stylesheet" />
           <link href="/static/css/style.css" rel="stylesheet" />
+          <link href="/static/css/nprogress.css" rel="stylesheet" />
         </Head>
-        <body className="custom_class">
+        <body>
           <Main />
           <NextScript />
         </body>

@@ -24,8 +24,8 @@ const Study = () => {
           <Row>
             {Visas.map(({ image, text }, index) => {
               return (
-                <Col md={6}>
-                  <div className="flexPanel" key={index}>
+                <Col md={6} key={index}>
+                  <div className="flexPanel">
                     <img
                       className="img-fluid"
                       src={`/static/images/home/${image}`}

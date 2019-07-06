@@ -1,13 +1,5 @@
 import React, { Fragment, useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
+import { NavItem, NavLink } from "reactstrap";
 import Link from "next/link";
 
 import "./index.scss";
@@ -102,8 +94,8 @@ const Index = () => {
           </p>
           {Footerlinks.map(({ href, label }, index) => {
             return (
-              <div className="copyright-links">
-                <NavItem key={index}>
+              <div className="copyright-links" key={index}>
+                <NavItem>
                   <Link href={href} passHref>
                     <NavLink className="copyright-link">{label}</NavLink>
                   </Link>
@@ -112,17 +104,6 @@ const Index = () => {
             );
           })}
         </div>
-        {/* <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
       </div>
     </Fragment>
   );

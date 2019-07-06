@@ -13,7 +13,7 @@ const CategoryRow = () => {
               <ReactPlayer
                 url="https://youtu.be/0IQkXUqc-14"
                 playing={false}
-                control={true}
+                control="true"
               />
             </div>
           </Col>

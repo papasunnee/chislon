@@ -12,8 +12,8 @@ const Study = () => {
           <Row>
             {Services.map(({ image, text }, index) => {
               return (
-                <Col md={4}>
-                  <div className="flexPanel" key={index}>
+                <Col md={4} key={index}>
+                  <div className="flexPanel">
                     <img
                       className="img-fluid"
                       src={`/static/images/services/${image}`}
