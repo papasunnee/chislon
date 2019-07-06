@@ -16,7 +16,7 @@ const ContactJumbotron = () => {
                 possimus illo atque impedit cupiditate dicta repudiandae laborum
                 deleniti vitae suscipit amet?
               </p>
-              <div className="title">Telephone Numner</div>
+              <div className="title">Telephone Number</div>
               <p>+234 801 2222 222</p>
               <div className="title">Email Address</div>
               <p>info@chislonbroadway.com</p>

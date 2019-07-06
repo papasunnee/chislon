@@ -1,63 +1,65 @@
 import React, { Fragment } from "react";
+import { Container, Row, Col } from "reactstrap";
+import SectionStyle from "../styles/SectionStyle";
 import "./Ourwork.css";
 
 const Ourwork = () => {
   return (
     <Fragment>
-      <div className="body-work">
-        <div className="first-work">
-          <img src="static/images/registration.png" alt="img" />
-          <div className="content">
-            <h4>REGISTRATION</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore.
-            </p>
-          </div>
-        </div>
-        <div className="second-work">
-          <img src="static/images/migration.png" alt="img" />
-          <div className="content">
-            <h4>MIGRATION EXPLORATORY MEETING</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore.
-            </p>
-          </div>
-        </div>
-        <div className="third-work">
-          <img src="static/images/documents.png" alt="img" />
-          <div className="content">
-            <h4>DOCUMENTS COLLECTION AND REVIEW</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore.
-            </p>
-          </div>
-        </div>
-        <div className="fourth-work">
-          <img src="static/images/follow.png" alt="img" />
-          <div className="content">
-            <h4>LUNCH VISA APPLICATION AND FOLLOW UP</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore.
-            </p>
-          </div>
-        </div>
-        <div className="fifth-work">
-          <img src="static/images/review.png" alt="img" />
-          <div className="content">
-            <h4>RESULT REVIEW AND CLOSE FILE</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Container fliud>
+        <SectionStyle>
+          <Row>
+            <Col md={12}>
+              <div className="workWrapper">
+                {WorkList.map((work, index) => {
+                  return (
+                    <div className="work">
+                      <img src={`/static/images/${work.image}`} />
+                      <h6>{work.title}</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia necessitatibus, soluta harum nemo laborum suscipit
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </Col>
+          </Row>
+        </SectionStyle>
+      </Container>
+      <style jsx>
+        {`
+          .workWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          .work {
+            max-width: 200px;
+            text-align: center;
+            margin: 10px;
+          }
+          .work img {
+            width: 70px;
+          }
+          .work h6 {
+            color: #003e52;
+            font-size: 0.9rem;
+            margin: 10px auto;
+          }
+        `}
+      </style>
     </Fragment>
   );
 };
 
 export default Ourwork;
+
+const WorkList = [
+  { title: "REGISTRATION", image: "registration.png" },
+  { title: "MIGRATION EXPLORATORY MEETING", image: "migration.png" },
+  { title: "DOCUMENTS COLLECTION AND REVIEW", image: "documents.png" },
+  { title: "LUNCH VISA APPLICATION AND FOLLOW UP", image: "follow.png" },
+  { title: "RESULT REVIEW AND CLOSE FILE", image: "review.png" }
+];
