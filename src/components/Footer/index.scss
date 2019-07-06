@@ -61,3 +61,15 @@ div.copyright {
     }
   }
 }
+
+.cow {
+  display: flex;
+  .copyright-links {
+    list-style-type: none;
+    .copyright-link {
+      color: #fff;
+      padding: 0px;
+      padding: 0px 10px;
+    }
+  }
+}
