@@ -5,9 +5,9 @@ import Link from "next/link";
 import "./index.scss";
 
 const Footerlinks = [
-  { label: "Privacy Policy", href: "/" },
-  { label: "Disclaimer", href: "/about" },
-  { label: "Cookie Policy", href: "/services" }
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
+  { label: "Cookie Policy", href: "/cookie-policy" }
 ];
 
 const Index = () => {
@@ -32,12 +32,12 @@ const Index = () => {
               </Link>
             </li>
             <li>
-              <Link href="how-we-work" prefetch>
+              <Link href="/how-we-work" prefetch>
                 <a>How We Work</a>
               </Link>
             </li>
             <li>
-              <Link href="partners" prefetch>
+              <Link href="/partners" prefetch>
                 <a>Partners</a>
               </Link>
             </li>

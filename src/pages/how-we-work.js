@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Jumbotron from "../components/Jumbotron";
 import Ourwork from "../components/Ourwork/Ourwork";
 
 const Index = () => {
   return (
-    <div>
+    <Fragment>
       <Jumbotron title="HOW WE WORK" />
       <Ourwork />
-    </div>
+    </Fragment>
   );
 };
 export default Index;
