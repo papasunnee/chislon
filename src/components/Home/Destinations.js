@@ -5,14 +5,14 @@ import HeadingStyle from "../styles/Heading3";
 import MyCalendar from "./MyCalendar";
 
 const Immigrations = () => {
+  const handleHover = region => {
+    console.log("Region", region);
+  };
   return (
     <SectionStyle
       className="fluid"
       style={{
-        backgroundColor: "#003E52",
-        backgroundImage: "url(/static/images/home/world.png)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center right"
+        backgroundColor: "#003E52"
       }}
     >
       <Container fluid>
@@ -30,14 +30,21 @@ const Immigrations = () => {
                 </div>
               </form>
               <ul className="countries">
-                <li>North America</li>
-                <li>Central America & Caribbean</li>
-                <li>South America</li>
-                <li>Europe</li>
-                <li>Africa</li>
-                <li>Asia</li>
-                <li>Oceania</li>
+                <li onMouseOver={() => handleHover(1)}>North America</li>
+                <li onMouseOver={() => handleHover(2)}>
+                  Central America & Caribbean
+                </li>
+                <li onMouseOver={() => handleHover(3)}>South America</li>
+                <li onMouseOver={() => handleHover(4)}>Europe</li>
+                <li onMouseOver={() => handleHover(5)}>Africa</li>
+                <li onMouseOver={() => handleHover(6)}>Asia</li>
+                <li onMouseOver={() => handleHover(7)}>Oceania</li>
               </ul>
+            </div>
+          </Col>
+          <Col md={6}>
+            <div className="worldImage">
+              <img className="img-fluid" src="/static/images/home/world.svg" />
             </div>
           </Col>
         </Row>
@@ -72,6 +79,11 @@ const Immigrations = () => {
             background-color: #797979;
             margin-bottom: 2px;
             padding: 5px 10px;
+          }
+          .countries li:hover {
+            color: #000;
+            background-color: #e5e5e5;
+            cursor: pointer;
           }
         `}
       </style>

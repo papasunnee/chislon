@@ -114,15 +114,20 @@ const Socials = () => {
   return (
     <ul className="footerSocials">
       <li>
-        <Link href="" prefetch>
-          <a>
+        <Link href="https://twitter.com/BroadwayChislon" prefetch>
+          <a target="_blank">
             <img src="/static/images/home/twitter.png" alt="" />
           </a>
         </Link>
       </li>
       <li>
-        <Link href="" prefetch>
-          <a>
+        <Link
+          href="
+https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
+"
+          prefetch
+        >
+          <a target="_blank">
             <img src="/static/images/home/facebook.png" alt="" />
           </a>
         </Link>
