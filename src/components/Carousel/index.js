@@ -26,7 +26,7 @@ const items = [
   {
     src: "/static/images/home/sliders/4.jpg",
     altText: "Slide 4",
-    caption: "GLOBAL BUSINESS INVESTMENT"
+    caption: "GLOBAL BUSINESS & INVESTMENT"
   },
   {
     src: "/static/images/home/sliders/5.jpg",
@@ -36,7 +36,7 @@ const items = [
   {
     src: "/static/images/home/sliders/6.jpg",
     altText: "Slide 6",
-    caption: "RESIDENCE BY CITIZENSHIP"
+    caption: "RESIDENCY & CITIZENSHIP"
   }
 ];
 

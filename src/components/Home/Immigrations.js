@@ -52,7 +52,7 @@ const Immigrations = () => {
           <Col md={3}>
             <img
               className="img-fluid flags"
-              src="/static/images/home/flags/uk.png"
+              src="/static/images/home/flags/canada.png"
             />
             <span>Canada</span>
             <p>
@@ -63,11 +63,6 @@ const Immigrations = () => {
           </Col>
         </Row>
       </Container>
-
-      {/* ND*JOi1zvz */}
-
-      {/* mc4Ni$3jU5 */}
-
       <style jsx>
         {`
           .flags {

@@ -50,6 +50,8 @@ const Immigrations = () => {
           }
           .form-group .form-control {
             border-radius: 0;
+            border: 0;
+            box-shadow: none;
           }
           .destination {
             max-width: 350px;

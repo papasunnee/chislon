@@ -82,10 +82,12 @@ const Study = () => {
         .formWrapper label{
           display : block ;
         }
-        textarea,
+        .form-control,textarea,
         textarea:focus{
           resize : none ;
           outline:none ;
+          box-shadow: none;
+          border: 0;
           box-shadow: none;
         }
 

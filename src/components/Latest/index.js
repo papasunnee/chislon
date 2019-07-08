@@ -59,6 +59,8 @@ const SearchForm = () => {
         }
         .form-group .form-control {
           border-radius: 0;
+          border: 0;
+          box-shadow: none;
         }
       `}</style>
     </form>
