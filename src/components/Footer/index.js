@@ -133,8 +133,11 @@ https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
         </Link>
       </li>
       <li>
-        <Link href="" prefetch>
-          <a>
+        <Link
+          href="https://www.linkedin.com/company/chislon-broadway/?viewAsMember=true"
+          prefetch
+        >
+          <a target="_blank">
             <img src="/static/images/home/linkedin.png" alt="" />
           </a>
         </Link>
