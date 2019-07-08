@@ -7,11 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from "reactstrap";
 
 const Menus = [
@@ -48,20 +44,9 @@ const Index = () => {
             })}
             <NavItem className="">
               <Link href="/login" passHref>
-                <NavLink style={{ color: "red" }}>Login</NavLink>
+                <NavLink style={{ color: "#FFDA42" }}>Login</NavLink>
               </Link>
             </NavItem>
-            {/* <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
           </Nav>
         </Collapse>
       </Navbar>

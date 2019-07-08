@@ -1,11 +1,22 @@
 import React, { Fragment } from "react";
+import { Container, Row, Col } from "reactstrap";
+import Jumbotron from "../components/Jumbotron";
+import SectionStyle from "../components/styles/SectionStyle";
+import ContentPages from "../components/Footer/ContentPages";
 
-export default function PrivacyPolicy() {
+export default function Disclaimer() {
   return (
     <Fragment>
-      <div>
-        <h1>Privacy Policy</h1>
-      </div>
+      <Jumbotron title="PRIVACY POLICY" />
+      <Container>
+        <SectionStyle>
+          <Row>
+            <Col md={12}>
+              <ContentPages />
+            </Col>
+          </Row>
+        </SectionStyle>
+      </Container>
     </Fragment>
   );
 }
