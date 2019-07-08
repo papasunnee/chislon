@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-export default function ContentPages() {
+const ContentPages = () => {
   return (
     <Fragment>
       <hr />
@@ -90,4 +90,6 @@ export default function ContentPages() {
       </style>
     </Fragment>
   );
-}
+};
+
+export default ContentPages;

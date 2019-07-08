@@ -31,7 +31,11 @@ export default function Download() {
                   <HeadingStyle>DOWNLOAD OUR BROCHURE</HeadingStyle>
                   <form>
                     <div className="form-group">
-                      <input className="form-control" type="text" />
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="Email Here"
+                      />
                     </div>
                     <ButtonStyle>SUBSCRIBE NOW</ButtonStyle>
                   </form>
@@ -43,6 +47,11 @@ export default function Download() {
       </div>
       <style jsx>
         {`
+          .form-group .form-control {
+            border-radius: 0;
+            border: 1px solid #e5e5e5;
+            box-shadow: none;
+          }
           .download {
             padding: 4rem 2rem;
           }
