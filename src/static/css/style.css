@@ -13,6 +13,9 @@
 .carousel-item {
   max-height: 80vh !important;
 }
+.carousel-caption h3 {
+  font-size: 4rem;
+}
 
 img {
   width: 100%;

@@ -34,9 +34,12 @@ ul.footerMenu {
 ul.footerSocials {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   img {
-    max-width: 100px;
+    width: 25px;
+    height: 25px;
+    margin: auto 10px;
   }
 }
 

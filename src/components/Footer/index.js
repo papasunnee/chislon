@@ -115,9 +115,10 @@ const Socials = () => {
     <ul className="footerSocials">
       <li>
         <Link href="https://twitter.com/BroadwayChislon" prefetch>
-          <a target="_blank">
+          <i className="fa fa-twitter" />
+          {/* <a target="_blank">
             <img src="/static/images/home/twitter.png" alt="" />
-          </a>
+          </a> */}
         </Link>
       </li>
       <li>
@@ -127,9 +128,10 @@ https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
 "
           prefetch
         >
-          <a target="_blank">
+          <i className="fa fa-facebook" />
+          {/* <a target="_blank">
             <img src="/static/images/home/facebook.png" alt="" />
-          </a>
+          </a> */}
         </Link>
       </li>
       <li>
@@ -137,9 +139,10 @@ https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
           href="https://www.linkedin.com/company/chislon-broadway/?viewAsMember=true"
           prefetch
         >
-          <a target="_blank">
+          <i className="fa fa-linkedin" />
+          {/* <a target="_blank">
             <img src="/static/images/home/linkedin.png" alt="" />
-          </a>
+          </a> */}
         </Link>
       </li>
     </ul>
