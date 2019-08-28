@@ -25,6 +25,7 @@
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
     "react-accessible-accordion": "^3.0.0",
+    "react-burger-menu": "^2.6.11",
     "react-calendar": "^2.19.0",
     "react-dom": "^16.8.6",
     "react-player": "^1.11.1",
