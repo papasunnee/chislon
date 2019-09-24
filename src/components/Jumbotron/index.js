@@ -23,7 +23,12 @@ const Index = props => {
             clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
           }
           .jumbotron {
-            background-image: url(/static/images/contact/contact.jpg) !important;
+            background-image: url(/static/images/${props.bgImage ||
+                "contact/contact.jpg"}) !important;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: contain;
+            position: relative;
           }
         `}
       </style>

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import SectionStyle from "../styles/SectionStyle";
 import HeadingStyle from "../styles/Heading3";
 import MyCalendar from "./MyCalendar";
+import Heading3Style from "../styles/Heading3";
 
 const Events = () => {
   return (
@@ -10,6 +11,9 @@ const Events = () => {
       <Container>
         <Row>
           <Col sm={12} lg={8}>
+            <Heading3Style className="text-center mb-5">
+              UPCOMING EVENTS
+            </Heading3Style>
             <Event />
             <Event />
             <Event />
