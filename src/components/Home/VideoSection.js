@@ -8,6 +8,11 @@ const CategoryRow = () => {
     <Fragment>
       <SectionStyle className="gradientBg">
         <Row>
+          <Col md={12} className="text-center">
+            <h3 style={{ color: "#fff" }}>SEE HOW CHISLON WORKS</h3>
+            <p style={{ color: "#fff" }}>Learn More | Watch Video</p>
+          </Col>
+
           <Col md={12}>
             <div className="videoWrapper">
               <ReactPlayer

@@ -22,42 +22,42 @@ const Index = () => {
           <h5>Quick Access ></h5>
           <ul className="footerMenu">
             <li>
-              <Link href="/" prefetch>
+              <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="/about" prefetch>
+              <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="/how-we-work" prefetch>
+              <Link href="/how-we-work">
                 <a>How We Work</a>
               </Link>
             </li>
             <li>
-              <Link href="/partners" prefetch>
+              <Link href="/partners">
                 <a>Partners</a>
               </Link>
             </li>
             <li>
-              <Link href="/services" prefetch>
+              <Link href="/services">
                 <a>Services</a>
               </Link>
             </li>
             <li>
-              <Link href="/latest-news" prefetch>
+              <Link href="/latest-news">
                 <a>Latest News</a>
               </Link>
             </li>
             <li>
-              <Link href="/contact" prefetch>
+              <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
             <li>
-              <Link href="/faqs" prefetch>
+              <Link href="/faqs">
                 <a>FAQs</a>
               </Link>
             </li>
@@ -114,7 +114,7 @@ const Socials = () => {
   return (
     <ul className="footerSocials">
       <li>
-        <Link href="https://twitter.com/BroadwayChislon" prefetch>
+        <Link href="https://twitter.com/BroadwayChislon">
           <i className="fa fa-twitter" />
           {/* <a target="_blank">
             <img src="/static/images/home/twitter.png" alt="" />
@@ -126,7 +126,6 @@ const Socials = () => {
           href="
 https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
 "
-          prefetch
         >
           <i className="fa fa-facebook" />
           {/* <a target="_blank">
@@ -135,10 +134,7 @@ https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
         </Link>
       </li>
       <li>
-        <Link
-          href="https://www.linkedin.com/company/chislon-broadway/?viewAsMember=true"
-          prefetch
-        >
+        <Link href="https://www.linkedin.com/company/chislon-broadway/?viewAsMember=true">
           <i className="fa fa-linkedin" />
           {/* <a target="_blank">
             <img src="/static/images/home/linkedin.png" alt="" />

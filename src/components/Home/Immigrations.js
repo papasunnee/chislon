@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionStyle from "../styles/SectionStyle";
 import HeadingStyle from "../styles/Heading3";
-import MyCalendar from "./MyCalendar";
 
 const Immigrations = () => {
   return (

@@ -30,6 +30,11 @@ const Study = () => {
               </div>
             </Col>
           </Row>
+          <Row>
+            <Col md={12}>
+              <div className="leftBottom"></div>
+            </Col>
+          </Row>
         </Col>
         <Col sm="12" md={{ size: 6 }}>
           <div className="flexPanel">
@@ -74,6 +79,15 @@ const Study = () => {
           color : #fff;
           font-weight : bold ;
           transform: translateX(-50%) translateY(-50%) ;
+        }
+        .leftBottom{
+          height : 150px ;
+          width : 200px ;
+          margin : auto ;
+          min-width : 70% ;
+          border: none ;
+          border-left : 4px solid #00B8F2 ;
+          border-bottom : 4px solid #00B8F2 ;
         }
       `}
       </style>

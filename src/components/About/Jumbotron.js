@@ -6,9 +6,7 @@ const AboutJumbotron = () => {
     <Jumbotron>
       <section className="jumboBg">
         <div className="jumbotronContent">
-          <h4 className="display-5">
-            STUDY, GET A JOB OR START A BUSINESS ANYWHERE IN THE WORLD
-          </h4>
+          <h4 className="display-5">HISTORY</h4>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
             deserunt cum odio tempora tempore! Magnam minima quos obcaecati,

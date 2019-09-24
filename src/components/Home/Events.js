@@ -7,18 +7,19 @@ import MyCalendar from "./MyCalendar";
 const Events = () => {
   return (
     <SectionStyle className="fluid">
-      <Row>
-        <Col sm={12} md={6}>
-          <Event />
-          <Event />
-          <Event />
-          <Event />
-        </Col>
-        <Col sm={12} md={6}>
-          <MyCalendar />
-        </Col>
-      </Row>
       <Container>
+        <Row>
+          <Col sm={12} lg={8}>
+            <Event />
+            <Event />
+            <Event />
+            <Event />
+          </Col>
+          <Col sm={12} lg={4}>
+            <MyCalendar />
+          </Col>
+        </Row>
+
         <Row>
           <Col md={12}>
             <HeadingStyle style={{ textAlign: "center", margin: "2rem 0" }}>
@@ -39,6 +40,23 @@ const Events = () => {
           </Col>
           <Col md={3}>
             <img className="img-fluid" src="/static/images/home/uk.png" />
+          </Col>
+        </Row>
+        <Row className="my-5">
+          <Col md={3}>
+            <img className="img-fluid" src="/static/images/home/uae.png" />
+          </Col>
+          <Col md={3}>
+            <img className="img-fluid" src="/static/images/home/china.png" />
+          </Col>
+          <Col md={3}>
+            <img className="img-fluid" src="/static/images/home/eu.png" />
+          </Col>
+          <Col md={3}>
+            <img
+              className="img-fluid"
+              src="/static/images/home/singapore.png"
+            />
           </Col>
         </Row>
       </Container>

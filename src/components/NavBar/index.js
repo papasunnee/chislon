@@ -54,11 +54,11 @@ const Index = () => {
             );
           })}
 
-          <NavItem className="login">
+          {/* <NavItem className="login">
             <Link href="/login" passHref>
               <NavLink style={{ color: "#FFDA42 !important" }}>Login</NavLink>
             </Link>
-          </NavItem>
+          </NavItem> */}
         </Menu>
         {/* </Collapse> */}
       </nav>

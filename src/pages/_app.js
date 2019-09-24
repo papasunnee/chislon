@@ -1,10 +1,15 @@
 import React from "react";
-import App, { Container } from "next/app";
+import App from "next/app";
+import dynamic from "next/dynamic";
 import NProgress from "nprogress";
 import Router from "next/router";
 import Layout from "../components/Layout";
+import CookieConsent from "../components/Common/CookieConsent";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-
+const Addthis = dynamic(() => import("../components/Common/AddThis"), {
+  ssr: false,
+  loading: () => <p style={{ display: "none" }} />
+});
 const theme = {
   colors: {
     black: "#212121",
@@ -64,14 +69,14 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Container>
-        <ThemeProvider theme={theme}>
-          <Layout>
-            <GlobalStyle />
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </Container>
+      <ThemeProvider theme={theme}>
+        <Layout>
+          <CookieConsent />
+          <Addthis />
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     );
   }
 }

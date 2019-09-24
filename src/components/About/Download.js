@@ -13,7 +13,9 @@ export default function Download() {
               <div className="content">
                 <img src="/static/images/about/brochurecover.jpg" />
                 <div>
-                  <HeadingStyle>DOWNLOAD OUR BROCHURE</HeadingStyle>
+                  <HeadingStyle>
+                    <span>DOWNLOAD OUR BROCHURE</span>
+                  </HeadingStyle>
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quasi deserunt cum odio tempora tempore! Magnam minima quos
@@ -28,12 +30,20 @@ export default function Download() {
               <div className="content">
                 <img src="/static/images/about/newsletter.png" />
                 <div>
-                  <HeadingStyle>DOWNLOAD OUR BROCHURE</HeadingStyle>
-                  <form>
+                  <HeadingStyle>
+                    <span>DOWNLOAD OUR BROCHURE</span>
+                  </HeadingStyle>
+                  <form
+                    onSubmit={e => {
+                      e.preventDefault();
+                      alert("Contact Developer");
+                    }}
+                  >
                     <div className="form-group">
                       <input
                         className="form-control"
-                        type="text"
+                        type="email"
+                        required
                         placeholder="Email Here"
                       />
                     </div>
@@ -54,6 +64,11 @@ export default function Download() {
           }
           .download {
             padding: 4rem 2rem;
+            background: linear-gradient(
+              122.47deg,
+              #003e52 -0.69%,
+              #00b8f2 100%
+            );
           }
           .download img {
             max-width: 150px;
