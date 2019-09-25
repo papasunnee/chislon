@@ -114,7 +114,7 @@ const Socials = () => {
   return (
     <ul className="footerSocials">
       <li>
-        <Link href="https://twitter.com/BroadwayChislon">
+        <Link href="//twitter.com/BroadwayChislon">
           <i className="fa fa-twitter" />
           {/* <a target="_blank">
             <img src="/static/images/home/twitter.png" alt="" />
@@ -124,7 +124,7 @@ const Socials = () => {
       <li>
         <Link
           href="
-https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
+//www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
 "
         >
           <i className="fa fa-facebook" />
@@ -134,7 +134,7 @@ https://www.facebook.com/Chislon-broadway-417594015502295/?modal=admin_todo_tour
         </Link>
       </li>
       <li>
-        <Link href="https://www.linkedin.com/company/chislon-broadway/?viewAsMember=true">
+        <Link href="//www.linkedin.com/company/chislon-broadway/?viewAsMember=true">
           <i className="fa fa-linkedin" />
           {/* <a target="_blank">
             <img src="/static/images/home/linkedin.png" alt="" />

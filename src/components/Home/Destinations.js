@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionStyle from "../styles/SectionStyle";
-import HeadingStyle from "../styles/Heading3";
-import MyCalendar from "./MyCalendar";
 
 const Immigrations = () => {
   const handleHover = region => {
@@ -44,7 +42,10 @@ const Immigrations = () => {
           </Col>
           <Col md={6}>
             <div className="worldImage">
-              <img className="img-fluid" src="/static/images/home/world.svg" />
+              <img
+                className="img-fluid"
+                src="/static/images/home/continent.svg"
+              />
             </div>
           </Col>
         </Row>
@@ -84,6 +85,24 @@ const Immigrations = () => {
             color: #000;
             background-color: #e5e5e5;
             cursor: pointer;
+          }
+          .st0 {
+            fill: #d4d4d4;
+          }
+          .st1 {
+            fill: #d4d4d4;
+          }
+          .st2 {
+            fill: #d4d4d4;
+          }
+          .st3 {
+            fill: #d4d4d4;
+          }
+          .st4 {
+            fill: #d4d4d4;
+          }
+          .st5 {
+            fill: #d4d4d4;
           }
         `}
       </style>
