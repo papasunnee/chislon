@@ -3,12 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import moment from "moment";
 import Link from "next/link";
 import SectionStyle from "../styles/SectionStyle";
-import HeadingStyles from "../styles/Heading3";
 
 const Index = () => {
   return (
     <SectionStyle>
-      <Container>
+      <Container className="my-5">
         <Row>
           <Col md={4}>
             <SearchForm />

@@ -35,6 +35,7 @@ const Study = () => {
                       <Heading3Style>
                         GET YOUR <span>{text}</span>
                       </Heading3Style>
+                      <hr />
                       <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Quasi deserunt cum odio tempora tempore! Magnam

@@ -4,8 +4,8 @@ import Jumbotron from "../Jumbotron";
 const AboutJumbotron = () => {
   return (
     <Fragment>
-      <Jumbotron className="customAbout" bgImage="about/abou.jpg">
-        <section className="jumboBg">
+      <Jumbotron className="customAbout">
+        <section className="aboutJumboBg p-5">
           <div className="jumbotronContent">
             <h4 className="display-5">HISTORY</h4>
             <p>
@@ -30,9 +30,14 @@ const AboutJumbotron = () => {
         </section>
       </Jumbotron>
       <style jsx>{`
-        .customAbout {
-          background-image: url(/static/images/about/about.jpg);
+        .aboutJumboBg {
+          background-image: url(/static/images/about/about.jpg),
+            linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: bottom center;
         }
+
         .jumboBg {
         }
         .jumbotronContent {

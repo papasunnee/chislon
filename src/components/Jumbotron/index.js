@@ -4,10 +4,19 @@ import { Jumbotron, Button } from "reactstrap";
 const Index = props => {
   return (
     <Fragment>
-      <Jumbotron>
-        <div className="title">{props.title || "ABOUT US"}</div>
-        {props.children}
-      </Jumbotron>
+      <section className="myJumbo" style={{ backgroundColor: "red" }}>
+        <Jumbotron
+          style={{
+            padding: 0,
+            minHeight: "100px",
+            backgroundImage:
+              "linear-gradient(160.13deg, #003E52 -0.69%, #00B8F2 100%)"
+          }}
+        >
+          <div className="title">{props.title || "ABOUT US"}</div>
+          {props.children}
+        </Jumbotron>
+      </section>
       <style jsx>
         {`
           .title {
@@ -22,9 +31,8 @@ const Index = props => {
             font-weight: 600;
             clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
           }
-          .jumbotron {
-            background-image: url(/static/images/${props.bgImage ||
-                "contact/contact.jpg"}) !important;
+          .myJumbo {
+            background-image: red;
             background-repeat: no-repeat;
             background-position: bottom center;
             background-size: contain;

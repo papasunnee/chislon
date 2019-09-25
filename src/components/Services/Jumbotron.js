@@ -4,7 +4,7 @@ import Jumbotron from "../Jumbotron";
 const ServicesJumbotron = () => {
   return (
     <Jumbotron title="SERVICES">
-      <section className="jumboBg">
+      <section className="servicesJumboBg p-5">
         <div className="jumbotronContent">
           <h4 className="display-5">
             Ultricies mi eget mauris pharetra et ultrices neque ornare aenean.
@@ -21,10 +21,15 @@ const ServicesJumbotron = () => {
         </div>
       </section>
       <style jsx>{`
-        .jumboBg {
+        .servicesJumboBg {
           position: relative;
-          height: 50vh;
+          background-image: url(/static/images/services/services.jpg),
+            linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 70vh;
         }
+
         .jumbotronContent {
           max-width: 500px;
           text-align: center;

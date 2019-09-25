@@ -2,10 +2,10 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 import Jumbotron from "../Jumbotron";
 
-const ContactJumbotron = () => {
+const ContactJumbotron = props => {
   return (
-    <Jumbotron title="SERVICES">
-      <section className="jumboBg">
+    <Jumbotron title="CONTACT">
+      <section className="contactJumboBg p-5">
         <Row>
           <Col md={{ size: 6, offset: 6 }}>
             <div className="jumbotronContent">
@@ -27,6 +27,12 @@ const ContactJumbotron = () => {
         </Row>
       </section>
       <style jsx>{`
+        .contactJumboBg {
+          background-image: url(/static/images/contact/contact.jpg),
+            linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
         .jumbotronContent {
           max-width: 500px;
         }
