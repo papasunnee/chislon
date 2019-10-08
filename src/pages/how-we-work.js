@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import Jumbotron from "../components/Jumbotron";
-import Ourwork from "../components/Ourwork/Ourwork";
+import WorkProcess from "../components/Ourwork/WorkProcess";
 
 const Index = () => {
   return (
     <Fragment>
       <Jumbotron title="HOW WE WORK" />
-      <Ourwork />
+      <WorkProcess />
     </Fragment>
   );
 };
