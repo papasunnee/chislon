@@ -6,6 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
+import "./index.scss";
 
 const items = [
   {
@@ -110,7 +111,7 @@ class MyCarousel extends Component {
           onClickHandler={this.goToIndex}
         />
         {slides}
-        <CarouselControl
+        {/* <CarouselControl
           direction="prev"
           directionText="Previous"
           onClickHandler={this.previous}
@@ -119,7 +120,7 @@ class MyCarousel extends Component {
           direction="next"
           directionText="Next"
           onClickHandler={this.next}
-        />
+        /> */}
       </Carousel>
     );
   }
