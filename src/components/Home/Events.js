@@ -17,7 +17,6 @@ const Events = () => {
             <Event />
             <Event />
             <Event />
-            <Event />
           </Col>
           <Col sm={12} lg={4}>
             <MyCalendar />
