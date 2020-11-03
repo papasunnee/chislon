@@ -6,11 +6,16 @@ import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const Menus = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Partners", href: "/partners" },
-  { label: "Latest News", href: "/latest-news" },
-  { label: "Contact", href: "/contact" }
+  { label: "About", href: "/" },
+  { label: "Global Investment", href: "/" },
+  { label: "Countries", href: "/" },
+  { label: "Temporary Visas", href: "/" },
+  { label: "Media", href: "/" },
+  // { label: "About", href: "/about" },
+  // { label: "Services", href: "/services" },
+  // { label: "Partners", href: "/partners" },
+  // { label: "Latest News", href: "/latest-news" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Index = () => {

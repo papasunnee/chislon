@@ -4,7 +4,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
 } from "reactstrap";
 import "./index.scss";
 
@@ -12,33 +12,43 @@ const items = [
   {
     src: "/static/images/home/sliders/1.png",
     altText: "Slide 1",
-    caption: "GLOBAL MOBILITY SERVICE"
+    caption: "GLOBAL MOBILITY SERVICE",
   },
   {
     src: "/static/images/home/sliders/2.jpg",
     altText: "Slide 2",
-    caption: "INTERNATIONAL EDUCATION"
+    caption: "INTERNATIONAL EDUCATION",
   },
   {
     src: "/static/images/home/sliders/3.jpg",
     altText: "Slide 3",
-    caption: "INTERNATIONAL HEADHUNTING"
+    caption: "INTERNATIONAL HEADHUNTING",
   },
   {
     src: "/static/images/home/sliders/4.jpg",
     altText: "Slide 4",
-    caption: "GLOBAL BUSINESS & INVESTMENT"
+    caption: "GLOBAL BUSINESS & INVESTMENT",
   },
   {
     src: "/static/images/home/sliders/5.jpg",
     altText: "Slide 5",
-    caption: "GLOBAL HEALTH CARE"
+    caption: "GLOBAL HEALTH CARE",
   },
   {
     src: "/static/images/home/sliders/6.jpg",
     altText: "Slide 6",
-    caption: "RESIDENCY & CITIZENSHIP"
-  }
+    caption: "RESIDENCY & CITIZENSHIP",
+  },
+  {
+    src: "/static/images/home/sliders/6.jpg",
+    altText: "Slide 6",
+    caption: "ADDITIONAL CAPTION",
+  },
+  {
+    src: "/static/images/home/sliders/6.jpg",
+    altText: "Slide 6",
+    caption: "ADDITIONAL CAPTION",
+  },
 ];
 
 class MyCarousel extends Component {
@@ -86,7 +96,7 @@ class MyCarousel extends Component {
   render() {
     const { activeIndex } = this.state;
 
-    const slides = items.map(item => {
+    const slides = items.map((item) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
