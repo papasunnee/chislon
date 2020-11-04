@@ -24,6 +24,7 @@ div.footer {
   }
 
   .footer_links {
+    margin-top: 40px;
     ul {
       list-style: none;
       padding: 0;
@@ -40,68 +41,68 @@ div.footer {
       }
     }
   }
-}
 
-nav.footerNav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul.footerMenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  li {
-    a,
-    a:hover {
-      padding: 1.5rem;
-      text-decoration: none;
-    }
-  }
-}
-ul.footerSocials {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  img {
-    width: 25px;
-    height: 25px;
-    margin: auto 10px;
-  }
-}
-
-div.copyright {
-  background-color: #003e52;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  span {
-    color: #d9a900;
-  }
-  ul {
-    display: inline-flex;
-    li {
-      a {
-        border-left: 1px solid #d9a900;
-        padding-left: 1rem;
-        margin-left: 1rem;
-        color: #fff;
-        text-decoration: none;
+  .social_links {
+    margin-top: 50px;
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        height: 33px;
+        width: 33px;
+        margin-right: 10px;
+        overflow: hidden;
+        div {
+          position: relative;
+          width: 100%;
+          height: 200%;
+          top: 0;
+          transition: all 0.5s linear;
+          &:hover {
+            top: -33px;
+          }
+        }
+        a {
+          display: block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          margin-bottom: 3px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: rgb(119, 119, 119);
+          color: #fff;
+          font-size: 12px;
+          &.low_opacity {
+            opacity: 0.5;
+          }
+          &:hover {
+            color: #fff;
+          }
+        }
       }
     }
   }
 }
 
 .copyrightBar {
+  background-color: #012f3f;
+  color: #fff;
+  padding: 2rem 4rem;
   display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+  span {
+    color: #d9a900;
+  }
   .copyright-links {
     list-style-type: none;
     .copyright-link {
       color: #fff;
       padding: 0px;
-      padding: 0px 10px;
+      padding-right: 10px;
     }
   }
 }

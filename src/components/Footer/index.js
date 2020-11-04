@@ -116,7 +116,7 @@ const Index = () => {
                 <a href="">Become a Global Citizen</a>
               </li>
               <li>
-                <a href="">Become a Certifie Partner</a>
+                <a href="">Become a Certified Partner</a>
               </li>
               <li>
                 <a href="">Government Enquiries</a>
@@ -125,61 +125,62 @@ const Index = () => {
                 <a href="">Media Enquiries</a>
               </li>
             </ul>
+
+            <div className="social_links">
+              <h6>FOLLOW US</h6>
+              <ul className="d-flex">
+                <li>
+                  <div>
+                    <a href="" className="top low_opacity">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="" className="bottom">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="" className="top low_opacity">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="" className="bottom">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="" className="top low_opacity">
+                      <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="" className="bottom">
+                      <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <a href="" className="top low_opacity">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="" className="bottom">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        {/* <nav className="footerNav">
-          <h5>Quick Access ></h5>
-          <ul className="footerMenu">
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <a>About</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/how-we-work">
-                <a>How We Work</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/partners">
-                <a>Partners</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/services">
-                <a>Services</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/latest-news">
-                <a>Latest News</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">
-                <a>Contact</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/faqs">
-                <a>FAQs</a>
-              </Link>
-            </li>
-          </ul>
-        </nav> */}
       </div>
-      {/* <div className="copyright">
-        <div className="copyrightBar">
-          <p>
-            Copyright 2020 <span>Chislon Broadway Visa Services</span> All
-            Rights Reserved
-          </p>
+
+      <div className="copyrightBar">
+        <p>
+          Copyright 2020 <span>Chislon Broadway Visa Services</span> All Rights
+          Reserved
+        </p>
+        <div className="d-flex">
           {Footerlinks.map(({ href, label }, index) => {
             return (
               <div className="copyright-links" key={index}>
@@ -192,7 +193,7 @@ const Index = () => {
             );
           })}
         </div>
-      </div> */}
+      </div>
     </Fragment>
   );
 };
