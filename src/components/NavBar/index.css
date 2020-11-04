@@ -65,9 +65,10 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #242424;
-  padding: 2.5em 1.5em 0;
+  background: #002531;
+  padding: 2.5em 1em 0;
   font-size: 1.15em;
+  border-left: 5px solid #00141b;
 }
 
 /* Morph shape necessary with bubble or elastic */

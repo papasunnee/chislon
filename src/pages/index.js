@@ -13,10 +13,11 @@ const Index = () => {
       <Carousel />
       <Study />
       <CategoryRow />
+      {/*
       <VideoSection />
-      <Events />
+       <Events /> */}
       <Immigrations />
-      <Destinations />
+      {/* <Destinations /> */}
     </Fragment>
   );
 };

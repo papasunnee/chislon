@@ -25,7 +25,10 @@ const Index = () => {
   };
 
   return (
-    <nav className="navbar navbar-default bg-dark">
+    <nav
+      className="navbar navbar-default"
+      style={{ backgroundColor: "#002531" }}
+    >
       <NavbarBrand href="/">
         <img src="/static/images/whitelogo.png" className="img-fluid" />
       </NavbarBrand>

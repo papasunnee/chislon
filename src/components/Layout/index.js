@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Fragment>
       <div className="container-fluid p-0">
