@@ -7,7 +7,7 @@ import "./ServiceOptions.scss";
 const ServiceOptions = () => {
   return (
     <SectionStyle className="fluid" style={{ backgroundColor: "#F2F2F2" }}>
-      <Container fluid>
+      <Container>
         <Row>
           <Col md={12}>
             <HeadingStyle style={{ margin: "2rem 0" }}>
@@ -20,6 +20,9 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>RESIDENCY BY INVESTMENT</p>
               </a>
+              <div className="label">
+                <p>RESIDENCY BY INVESTMENT</p>
+              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -28,6 +31,9 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>CITIZENSHIP BY INVESTMENT</p>
               </a>
+              <div className="label">
+                <p>CITIZENSHIP BY INVESTMENT</p>
+              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -36,6 +42,9 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>HIGH NETWORTH INVESTORS</p>
               </a>
+              <div className="label">
+                <p>HIGH NETWORTH INVESTORS</p>
+              </div>
             </div>
           </Col>
         </Row>
@@ -46,6 +55,9 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>CERTIFIED PARTNERS</p>
               </a>
+              <div className="label">
+                <p>CERTIFIED PARTNERS</p>
+              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -54,6 +66,9 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>GLOBAL CITIZENSHIP NETWORK</p>
               </a>
+              <div className="label">
+                <p>GLOBAL CITIZENSHIP NETWORK</p>
+              </div>
             </div>
           </Col>
           <Col md={4}>
@@ -62,22 +77,13 @@ const ServiceOptions = () => {
               <a href="" className="top_text">
                 <p>TEMPORARY VISAS</p>
               </a>
+              <div className="label">
+                <p>TEMPORARY VISAS</p>
+              </div>
             </div>
           </Col>
         </Row>
       </Container>
-      <style jsx>
-        {`
-          .flags {
-            width: auto !important;
-          }
-          img + span {
-            color: #cea600;
-            font-weight: 600;
-            margin-left: 10px;
-          }
-        `}
-      </style>
     </SectionStyle>
   );
 };
