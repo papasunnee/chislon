@@ -8,7 +8,7 @@ const Menus = [
   { label: "Home", href: "/" },
   { label: "About", href: "/" },
   { label: "Global Investment", href: "/" },
-  { label: "Countries", href: "/" },
+  { label: "Countries", href: "/country" },
   { label: "Temporary Visas", href: "/" },
   { label: "Media", href: "/" },
   // { label: "About", href: "/about" },
