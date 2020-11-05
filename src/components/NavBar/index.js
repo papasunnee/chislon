@@ -6,7 +6,7 @@ import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const Menus = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Global Investment", href: "/" },
   { label: "Countries", href: "/country" },
   { label: "Temporary Visas", href: "/" },

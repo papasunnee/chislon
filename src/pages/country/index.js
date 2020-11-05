@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Countries from "../components/Countries";
+import Countries from "../../components/Countries";
 
 const Country = () => {
   return (
