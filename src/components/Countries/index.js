@@ -43,7 +43,7 @@ export const CountryJumbo = ({ title }) => (
   </Jumbotron>
 );
 
-const flags = [
+export const flags = [
   { name: "Antigua Barbuda", href: "/country/antigua-barbuda" },
   { name: "Bulgaria", href: "/country/bulgaria" },
   { name: "Quebec, Canada", href: "/country/quebec-canada" },

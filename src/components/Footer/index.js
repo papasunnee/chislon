@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { NavItem, NavLink } from "reactstrap";
 import Link from "next/link";
+import { flags } from "../Countries/index";
 
 import "./index.scss";
 
@@ -54,29 +55,13 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h6>GLOBAL CITIZEN</h6>
+              <h6>PROGRAMS</h6>
               <ul>
-                <li>
-                  <a href="">Overview</a>
-                </li>
-                <li>
-                  <a href="">Residence by Investment</a>
-                </li>
-                <li>
-                  <a href="">Citizenship by Investment</a>
-                </li>
-                <li>
-                  <a href="">High Net Worth Investors</a>
-                </li>
-                <li>
-                  <a href="">Certified Paartners</a>
-                </li>
-                <li>
-                  <a href="">Governemnt Agencies</a>
-                </li>
-                <li>
-                  <a href="">Guide to our Dual Citizenship</a>
-                </li>
+                {flags.map((flag, index) => (
+                  <li>
+                    <a href={flag.href}>{flag.name}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

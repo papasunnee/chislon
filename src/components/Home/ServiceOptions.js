@@ -17,7 +17,7 @@ const ServiceOptions = () => {
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
+              <a href="/residency-by-investment" className="top_text">
                 <p>RESIDENCY BY INVESTMENT</p>
               </a>
               <div className="label">
@@ -28,7 +28,7 @@ const ServiceOptions = () => {
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
+              <a href="/citizenship-by-investment" className="top_text">
                 <p>CITIZENSHIP BY INVESTMENT</p>
               </a>
               <div className="label">
@@ -39,7 +39,7 @@ const ServiceOptions = () => {
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
+              <a href="/high-networth-investors" className="top_text">
                 <p>HIGH NETWORTH INVESTORS</p>
               </a>
               <div className="label">
@@ -52,33 +52,33 @@ const ServiceOptions = () => {
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
-                <p>CERTIFIED PARTNERS</p>
+              <a href="/work-abroad" className="top_text">
+                <p>WORK ABROAD</p>
               </a>
               <div className="label">
-                <p>CERTIFIED PARTNERS</p>
+                <p>WORK ABROAD</p>
               </div>
             </div>
           </Col>
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
-                <p>GLOBAL CITIZENSHIP NETWORK</p>
+              <a href="/study-abroad" className="top_text">
+                <p>STUDY ABROAD</p>
               </a>
               <div className="label">
-                <p>GLOBAL CITIZENSHIP NETWORK</p>
+                <p>STUDY ABROAD</p>
               </div>
             </div>
           </Col>
           <Col md={4}>
             <div className="option_wrapper">
               <img src="/static/images/temp_bg.jpg" alt="" />
-              <a href="" className="top_text">
-                <p>TEMPORARY VISAS</p>
+              <a href="/healthcare-abroad" className="top_text">
+                <p>HEALTHCARE ABROAD</p>
               </a>
               <div className="label">
-                <p>TEMPORARY VISAS</p>
+                <p>HEALTHCARE ABROAD</p>
               </div>
             </div>
           </Col>
