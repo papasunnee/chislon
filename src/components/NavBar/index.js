@@ -9,7 +9,7 @@ const Menus = [
   { label: "About", href: "/about" },
   { label: "Global Investment", href: "/" },
   { label: "Countries", href: "/country" },
-  { label: "Temporary Visas", href: "/" },
+  { label: "Healthcare Abroad", href: "/healthcare-abroad" },
   { label: "Media", href: "/" },
   // { label: "About", href: "/about" },
   // { label: "Services", href: "/services" },
