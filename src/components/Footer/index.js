@@ -19,11 +19,11 @@ const Index = () => {
           <div className="col-md-3 footer_links">
             <p className="heading">Empowering Global Citizenship</p>
             <div className="become">
-              <h6>BECOME A CERTIFIED PARTNER</h6>
+              <h6>BECOME AN INTERNATIONAL PARTNER</h6>
               <p>Discover the advantage of working with ChislonBroadway</p>
             </div>
             <div className="become">
-              <h6>BECOME A GLOBAL CITIZEN</h6>
+              <h6>JOIN CHISLONBROADWAY NETWORK</h6>
               <p>Discover the benefits for generations to come</p>
             </div>
           </div>
@@ -98,10 +98,14 @@ const Index = () => {
                 <a href="">Global Office Locations</a>
               </li>
               <li>
-                <a href="">Become a Global Citizen</a>
+                <Link>
+                  <a href="">Join ChislonBroadway Network</a>
+                </Link>
               </li>
               <li>
-                <a href="">Become a Certified Partner</a>
+                <Link href="/international-partner">
+                  <a>International Partner</a>
+                </Link>
               </li>
               <li>
                 <a href="">Government Enquiries</a>
