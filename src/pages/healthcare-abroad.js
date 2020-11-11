@@ -9,7 +9,7 @@ export default () => {
       <Container>
         <Row>
           <Col md={12}>
-            <h5>HOW TO HEALTHCARE ABROAD</h5>
+            <h5>HEALTHCARE ABROAD</h5>
           </Col>
         </Row>
       </Container>

@@ -13,7 +13,7 @@ const Menus = [
   { label: "Work Abroad", href: "/work-abroad" },
   { label: "Study Abroad", href: "/study-abroad" },
   { label: "Healthcare Abroad", href: "/healthcare-abroad" },
-  { label: "International Partners", href: "/international-partners" },
+  { label: "International Partners", href: "/international-partner" },
   { label: "Media", href: "/" },
   // { label: "Countries", href: "/country" },
   // { label: "About", href: "/about" },
