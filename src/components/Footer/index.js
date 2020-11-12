@@ -32,25 +32,39 @@ const Index = () => {
               <h6>GLOBAL CITIZEN</h6>
               <ul>
                 <li>
-                  <a href="">Overview</a>
+                  <Link href="">
+                    <a>Overview</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Residence by Investment</a>
+                  <Link href="">
+                    <a>Residence by Investment</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Citizenship by Investment</a>
+                  <Link href="">
+                    <a>Citizenship by Investment</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">High Net Worth Investors</a>
+                  <Link href="">
+                    <a>High Net Worth Investors</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Certified Paartners</a>
+                  <Link href="/international-partner">
+                    <a>International Paartners</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Governemnt Agencies</a>
+                  <Link href="">
+                    <a>Governemnt Agencies</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="">Guide to our Dual Citizenship</a>
+                  <Link href="">
+                    <a>Guide to our Dual Citizenship</a>
+                  </Link>
                 </li>
               </ul>
             </div>
