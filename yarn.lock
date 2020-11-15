@@ -23,7 +23,7 @@
 "@ampproject/toolbox-runtime-version@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-runtime-version/-/toolbox-runtime-version-1.0.1.tgz#2c13a17c08d1376ef55f44ef6679c25ff03828e0"
-  integrity sha512-OFky5rUfP9Hw/NlvEH+/8LqeSZ5DiXY2/RUvWSnY0r0/Uk4ooPyRCWEcVgRF7Y+wY+K1oro5UBZfE9MRYz+hpA==
+  integrity sha512-OFky5rUfP9Hw/NlvEH+/8LqeSZ5DiXY2/RUvWSnY0r0/united-kingdom4ooPyRCWEcVgRF7Y+wY+K1oro5UBZfE9MRYz+hpA==
   dependencies:
     "@ampproject/toolbox-core" "^1.0.1"
 
