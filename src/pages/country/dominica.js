@@ -5,7 +5,7 @@ import { CountryJumbo } from "../../components/Countries/index";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="DOMINICA" />
+      <CountryJumbo title="DOMINICA" className="dominica" />
     </Fragment>
   );
 };

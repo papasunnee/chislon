@@ -5,9 +5,9 @@ import { CountryJumbo } from "../../components/Countries/index";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="ANTIGUA AND BARBUDA" />
+      <CountryJumbo title="ANTIGUA AND BARBUDA" country="barbuda" />
       <Container>
-        <Row>
+        <Row className="my-5">
           <Col sm={12} md={8}>
             <p className="text-center">
               The largest of the English-speaking Leeward Islands attracts

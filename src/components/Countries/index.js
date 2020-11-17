@@ -6,7 +6,7 @@ import "./index.scss";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="GLOBAL CITIZEN PROGRAMS" />
+      <CountryJumbo title="GLOBAL CITIZEN PROGRAMS" country="usa" />
       <Container>
         <Row className="row">
           <div className="country_wrapper">
@@ -26,21 +26,27 @@ export default () => {
   );
 };
 
-export const CountryJumbo = ({ title }) => (
-  <Jumbotron fluid className="addOverlay">
-    <Container
+export const CountryJumbo = ({ title, country = "usa" }) => (
+  <Fragment>
+    <Jumbotron
       fluid
-      className="d-flex justify-content-center align-items-center"
+      className="addOverlay"
+      style={{ backgroundImage: `url('/static/images/flags/${country}.jpg')` }}
     >
-      <div className="jumboText text-center text-white">
-        <h1 className="display-6">{title}</h1>
-        <p className="lead">
-          Review available options. Obtain personalized advice. Make the right
-          choice.
-        </p>
-      </div>
-    </Container>
-  </Jumbotron>
+      <Container
+        fluid
+        className="d-flex justify-content-center align-items-center"
+      >
+        <div className="jumboText text-center text-white">
+          <h1 className="display-6">{title}</h1>
+          <p className="lead">
+            Review available options. Obtain personalized advice. Make the right
+            choice.
+          </p>
+        </div>
+      </Container>
+    </Jumbotron>
+  </Fragment>
 );
 
 export const flags = [

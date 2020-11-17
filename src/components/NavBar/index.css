@@ -95,11 +95,11 @@
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .bm-item:hover a.nav-link {
-  color: yellow !important;
-  padding-left: 20px;
+  color: #d9a900 !important;
+  padding-left: 15px;
 }
 .login a.nav-link {
-  color: rgb(246, 250, 19) !important;
+  color: #d9a900 !important;
 }
 
 /* Styling of overlay */

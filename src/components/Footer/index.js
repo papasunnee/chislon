@@ -18,13 +18,13 @@ const Index = () => {
         <div className="row">
           <div className="col-md-3 footer_links">
             <p className="heading">Empowering Global Citizenship</p>
-            <Link href="/">
+            <Link href="/international-partner">
               <a className="become">
                 <h6>BECOME AN INTERNATIONAL PARTNER</h6>
                 <p>Discover the advantage of working with ChislonBroadway</p>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a className="become">
                 <h6>JOIN CHISLONBROADWAY NETWORK</h6>
                 <p>Discover the benefits for generations to come</p>
@@ -41,23 +41,23 @@ const Index = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/residency-by-investment">
                     <a>Residence by Investment</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/citizenship-by-investment">
                     <a>Citizenship by Investment</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="">
+                  <Link href="/high-networth-investors">
                     <a>High Net Worth Investors</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/international-partner">
-                    <a>International Paartners</a>
+                    <a>International Partners</a>
                   </Link>
                 </li>
               </ul>
