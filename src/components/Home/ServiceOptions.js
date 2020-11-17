@@ -11,7 +11,7 @@ const ServiceOptions = () => {
         <Row>
           <Col md={12}>
             <HeadingStyle style={{ margin: "2rem 0" }}>
-              LATEST IMMIGRATION NEWS
+              NEW HEADING HERE
             </HeadingStyle>
           </Col>
           <Col md={4}>

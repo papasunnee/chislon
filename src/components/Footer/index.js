@@ -18,16 +18,20 @@ const Index = () => {
         <div className="row">
           <div className="col-md-3 footer_links">
             <p className="heading">Empowering Global Citizenship</p>
-            <div className="become">
-              <h6>BECOME AN INTERNATIONAL PARTNER</h6>
-              <p>Discover the advantage of working with ChislonBroadway</p>
-            </div>
-            <div className="become">
-              <h6>JOIN CHISLONBROADWAY NETWORK</h6>
-              <p>Discover the benefits for generations to come</p>
-            </div>
+            <Link href="/">
+              <a className="become">
+                <h6>BECOME AN INTERNATIONAL PARTNER</h6>
+                <p>Discover the advantage of working with ChislonBroadway</p>
+              </a>
+            </Link>
+            <Link href="/">
+              <a className="become">
+                <h6>JOIN CHISLONBROADWAY NETWORK</h6>
+                <p>Discover the benefits for generations to come</p>
+              </a>
+            </Link>
           </div>
-          <div className="col-md-3 footer_links d-flex">
+          <div className="col-md-2 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
               <h6>GLOBAL CITIZEN</h6>
               <ul>
@@ -56,79 +60,32 @@ const Index = () => {
                     <a>International Paartners</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="">
-                    <a>Governemnt Agencies</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="">
-                    <a>Guide to our Dual Citizenship</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h6>PROGRAMS</h6>
-              <ul>
-                {flags.map((flag, index) => (
-                  <li>
-                    <a href={flag.href}>{flag.name}</a>
-                  </li>
-                ))}
               </ul>
             </div>
           </div>
           <div className="col-md-2 footer_links">
-            <h6>Stay Up To Date</h6>
+            <h6>PROGRAMS</h6>
             <ul>
-              <li>
-                <a href="">Industry News</a>
-              </li>
-              <li>
-                <a href="">Industry Digest</a>
-              </li>
-              <li>
-                <a href="">ChislonBroadway in the News</a>
-              </li>
-              <li>
-                <a href="">Publications</a>
-              </li>
-              <li>
-                <a href="">Events</a>
-              </li>
-              <li>
-                <a href="">Videos</a>
-              </li>
-              <li>
-                <a href="">Global Citizen Magazine</a>
-              </li>
+              {flags.map((flag, index) => (
+                <li>
+                  <a href={flag.href}>{flag.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="col-md-3 footer_links">
             <h6>Contact Us</h6>
-            <ul>
-              <li>
-                <a href="">Global Office Locations</a>
-              </li>
-              <li>
-                <Link>
-                  <a href="">Join ChislonBroadway Network</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/international-partner">
-                  <a>International Partner</a>
-                </Link>
-              </li>
-              <li>
-                <a href="">Government Enquiries</a>
-              </li>
-              <li>
-                <a href="">Media Enquiries</a>
-              </li>
-            </ul>
+            <span class="d-block mb-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+              deserunt cum odio tempora tempore! Magnam minima quos obcaecati,
+              possimus illo atque impedit cupiditate dicta repudiandae laborum
+              deleniti vitae suscipit amet?
+            </span>
 
+            <h6>EMAIL</h6>
+            <span class="d-block mb-4">info@chislonbroadway.com</span>
+            <h6>PHONE</h6>
+            <span>+234 801 2222 222</span>
             <div className="social_links">
               <h6>FOLLOW US</h6>
               <ul className="d-flex">

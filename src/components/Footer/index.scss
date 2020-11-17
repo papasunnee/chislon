@@ -12,6 +12,12 @@ div.footer {
   }
   .become {
     margin-bottom: 3rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    &:hover {
+      color: #d4c489;
+    }
     h6 {
       font-size: 14px;
     }
