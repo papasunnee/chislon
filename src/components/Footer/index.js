@@ -36,7 +36,7 @@ const Index = () => {
               <h6>GLOBAL CITIZEN</h6>
               <ul>
                 <li>
-                  <Link href="">
+                  <Link href="/">
                     <a>Overview</a>
                   </Link>
                 </li>
@@ -53,6 +53,21 @@ const Index = () => {
                 <li>
                   <Link href="/high-networth-investors">
                     <a>High Net Worth Investors</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/work-abroad">
+                    <a>Work Abroad</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/study-abroad">
+                    <a>Study Abroad</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/healthcare-abroad">
+                    <a>Healthcare Abroad</a>
                   </Link>
                 </li>
                 <li>
