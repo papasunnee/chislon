@@ -17,7 +17,7 @@ const Index = () => {
       <div className="container-fluid footer">
         <div className="row">
           <div className="col-md-3 footer_links">
-            <p className="heading">Empowering Global Citizenship</p>
+            <p className="heading">The Gateway To Global Citizenship</p>
             <Link href="/international-partner">
               <a className="become">
                 <h6>BECOME AN INTERNATIONAL PARTNER</h6>
