@@ -1,17 +1,15 @@
 import React, { Fragment } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { CountryJumbo } from "../components/Countries/index";
-import CertifiedPartnerForm, {
-  TextTop,
-} from "../components/Forms/CertifiedPartnerForm";
+import JoinUsForm, { TextTop } from "../components/Forms/JoinUsForm";
 import ContactHere from "../components/Home/contactHere";
 
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="INTERNATIONAL PARTNERS" />
-      <TextTop title="Become an International Partner" />
-      <CertifiedPartnerForm />
+      <CountryJumbo title="JOIN CHISLON" />
+      <TextTop title="Your journey begins with Chislon Broadway" />
+      <JoinUsForm />
       <ContactHere />
     </Fragment>
   );

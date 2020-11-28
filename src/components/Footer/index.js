@@ -24,7 +24,7 @@ const Index = () => {
                 <p>Discover the advantage of working with ChislonBroadway</p>
               </a>
             </Link>
-            <Link href="/contact">
+            <Link href="/join-network">
               <a className="become">
                 <h6>JOIN CHISLONBROADWAY NETWORK</h6>
                 <p>Discover the benefits for generations to come</p>
