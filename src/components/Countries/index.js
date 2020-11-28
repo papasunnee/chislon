@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container, Jumbotron, Row } from "reactstrap";
 import "./index.scss";
 
-export default () => {
+const Countries = () => {
   return (
     <Fragment>
       <CountryJumbo title="GLOBAL CITIZEN PROGRAMS" country="usa" />
@@ -25,6 +25,8 @@ export default () => {
     </Fragment>
   );
 };
+
+export default Countries;
 
 export const CountryJumbo = ({ title, country = "usa" }) => (
   <Fragment>

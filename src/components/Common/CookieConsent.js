@@ -1,9 +1,9 @@
 import React from "react";
-import MyCookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 const MyCookieConsent = () => {
   return (
-    <MyCookieConsent
+    <CookieConsent
       location="bottom"
       buttonText="ACCEPT COOKIES"
       cookieName="chislon"
@@ -38,7 +38,7 @@ const MyCookieConsent = () => {
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam,
       {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
-    </MyCookieConsent>
+    </CookieConsent>
   );
 };
 
