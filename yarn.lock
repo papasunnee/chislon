@@ -4975,14 +4975,6 @@ react-error-overlay@5.1.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
-react-google-invisible-recaptcha@^0.2.11:
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/react-google-invisible-recaptcha/-/react-google-invisible-recaptcha-0.2.11.tgz#cb9eed3348d251eb0faa3a2d56ca4f9095fffa6e"
-  integrity sha512-OtT+/VOdmnFtXdOrZKRetKB5c5Zmq3u+YKsWeIX9XEVVJxXtyJvrWzu9rGGdCDIrOL0wEDWCLNmIc2AxrvpX1w==
-  dependencies:
-    prop-types "^15.6.0"
-    uuid "^3.1.0"
-
 react-invisible-recaptcha@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/react-invisible-recaptcha/-/react-invisible-recaptcha-0.3.1.tgz#bb2416e4a586c09e7717ac1743faa05f7cfc5190"
@@ -6197,11 +6189,6 @@ util@^0.11.0:
   integrity sha512-HShAsny+zS2TZfaXxD9tYj4HQGlBezXZMZuM/S5PKLLoZkShZiGk9o5CzukI1LVHZvjdvZ2Sj1aW/Ndn2NB/HQ==
   dependencies:
     inherits "2.0.3"
-
-uuid@^3.1.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
-  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 uuid@^3.3.2:
   version "3.3.2"

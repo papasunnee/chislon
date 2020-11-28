@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { Container, Row, Col } from "reactstrap";
-import Recaptcha from "react-google-invisible-recaptcha";
+// import Recaptcha from "react-google-invisible-recaptcha";
 import "./CertifiedPartnerForm.scss";
 
 const initialValue = {

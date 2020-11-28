@@ -30,7 +30,6 @@
     "react-calendar": "^2.19.2",
     "react-cookie-consent": "^2.5.0",
     "react-dom": "^16.9.0",
-    "react-google-invisible-recaptcha": "^0.2.11",
     "react-invisible-recaptcha": "^0.3.1",
     "react-player": "^1.13.0",
     "react-svgloader": "^1.0.8",
