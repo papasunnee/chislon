@@ -1,20 +1,103 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import axios from "axios";
 import { Container, Row, Col } from "reactstrap";
+import Recaptcha from "react-google-invisible-recaptcha";
 import "./CertifiedPartnerForm.scss";
 
+const initialValue = {
+  countries: [],
+  firstname: "",
+  lastname: "",
+  email: "",
+  phone: "",
+  country_activity: "",
+  target_market: "",
+  how_we_contact: "",
+  what_are_you: "",
+  company_name: "",
+  interest_program: "",
+  existing_client: "",
+  question: "",
+};
 const CertifiedPartnerForm = () => {
+  const captchaEl = useRef(null);
+  const [form, setForm] = useState(initialValue);
+  const getCountries = async () => {
+    const result = await axios("https://restcountries.eu/rest/v2/all");
+    setForm((prevValues) => ({
+      ...prevValues,
+      countries: [...result.data],
+    }));
+  };
+  useEffect(() => {
+    getCountries();
+  }, []);
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...form,
+      }),
+    })
+      .then(() => alert("/thank-you/"))
+      .catch((error) => alert(error));
+  };
+  const onSubmit = () => {
+    if ("" == form.value) {
+      alert("Validation failed! Input cannot be empty.");
+      recaptcha.reset();
+    } else {
+      recaptcha.execute();
+    }
+  };
+  const onResolved = () => {
+    alert("Recaptcha resolved with response: " + recaptcha.getResponse());
+  };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setForm((prevValues) => ({
+      ...prevValues,
+      [name]: value,
+    }));
+  };
   return (
     <Container className="mb-5 certifiedPartnerForm">
       <Row>
         <Col md={12}>
-          <form>
+          <form
+            className="mt-5"
+            name="join_us"
+            method="POST"
+            data-netlify="true"
+            onSubmit={handleSubmit}
+          >
             <Row>
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="" className="">
                     FIRST NAME <span className="text-danger">*</span>
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    className="form-control"
+                    value={form.firstname}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
               </Col>
               <Col md={6}>
@@ -22,7 +105,15 @@ const CertifiedPartnerForm = () => {
                   <label htmlFor="">
                     LAST NAME <span className="text-danger">*</span>
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    value={form.lastname}
+                    onChange={handleChange}
+                    className="form-control"
+                    required
+                  />
                 </div>
               </Col>
             </Row>
@@ -32,13 +123,28 @@ const CertifiedPartnerForm = () => {
                   <label htmlFor="">
                     EMAIL <span className="text-danger">*</span>
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    onChange={handleChange}
+                    value={form.email}
+                    className="form-control"
+                    required
+                  />
                 </div>
               </Col>
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">PHONE</label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    onChange={handleChange}
+                    value={form.phone}
+                    className="form-control"
+                  />
                 </div>
               </Col>
             </Row>
@@ -48,7 +154,21 @@ const CertifiedPartnerForm = () => {
                   <label htmlFor="">
                     COUNTRY OF ACTIVITY <span className="text-danger">*</span>
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <select
+                    name="country_activity"
+                    id="country_activity"
+                    onChange={handleChange}
+                    value={form.country_activity}
+                    className="form-control"
+                  >
+                    {form.countries.map((country, index) => {
+                      return (
+                        <option key={index} value={country.name}>
+                          {country.name}
+                        </option>
+                      );
+                    })}
+                  </select>
                 </div>
               </Col>
               <Col md={6}>
@@ -56,7 +176,21 @@ const CertifiedPartnerForm = () => {
                   <label htmlFor="">
                     TARGET MARRKET(S) <span className="text-danger">*</span>
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <select
+                    name="target_market"
+                    id="target_market"
+                    value={form.target_market}
+                    onChange={handleChange}
+                    className="form-control"
+                  >
+                    {form.countries.map((country, index) => {
+                      return (
+                        <option key={index} value={country.name}>
+                          {country.name}
+                        </option>
+                      );
+                    })}
+                  </select>
                 </div>
               </Col>
             </Row>
@@ -64,21 +198,42 @@ const CertifiedPartnerForm = () => {
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">HOW DO WE CONTACT YOU</label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="how_we_contact"
+                    id="how_we_contact"
+                    value={form.how_we_contact}
+                    onChange={handleChange}
+                    className="form-control"
+                  />
                 </div>
               </Col>
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">ARE YOU</label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="what_are_you"
+                    id="what_are_you"
+                    value={form.what_are_you}
+                    onChange={handleChange}
+                    className="form-control"
+                  />
                 </div>
               </Col>
             </Row>
             <Row>
               <Col md={6}>
                 <div className="form-group">
-                  <label htmlFor="">COMNAPY NAME</label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <label htmlFor="">COMPANY NAME</label>
+                  <input
+                    type="text"
+                    name="company_name"
+                    id="company_name"
+                    value={form.company_name}
+                    onChange={handleChange}
+                    className="form-control"
+                  />
                 </div>
               </Col>
               <Col md={6}>
@@ -86,7 +241,14 @@ const CertifiedPartnerForm = () => {
                   <label htmlFor="">
                     GLOBAL CITIZEN PROGRAM OF INTEREST YOU
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="interest_program"
+                    id="interest_program"
+                    value={form.interest_program}
+                    onChange={handleChange}
+                    className="form-control"
+                  />
                 </div>
               </Col>
             </Row>
@@ -97,15 +259,25 @@ const CertifiedPartnerForm = () => {
                     DO YOU HAVE EXISTING CLIENTS ALREADY ENROLLED IN OTHER
                     PROGRAMS?
                   </label>
-                  <input type="text" name="" id="" className="form-control" />
+                  <input
+                    type="text"
+                    name="existing_client"
+                    id="existing_client"
+                    interest_program
+                    value={form.existing_client}
+                    onChange={handleChange}
+                    className="form-control"
+                  />
                 </div>
               </Col>
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">QUESTIONS OR COMMENTS</label>
                   <textarea
-                    name=""
-                    id=""
+                    name="question"
+                    id="question"
+                    value={form.question}
+                    onChange={handleChange}
                     cols="30"
                     rows="10"
                     className="form-control"
@@ -115,8 +287,13 @@ const CertifiedPartnerForm = () => {
             </Row>
             <Row className="mb-5">
               <Col md={12}>
+                {/* <Recaptcha
+                  ref={captchaEl}
+                  sitekey="6Le0zPAZAAAAAMZdhOAPB3SJFtAa_EpOlPShHgr4"
+                  onResolved={() => console.log("Human detected.")}
+                /> */}
                 <input
-                  type="button"
+                  type="submit"
                   value="Send Message"
                   className="btn submitButton"
                 />
@@ -133,10 +310,10 @@ export default CertifiedPartnerForm;
 
 export const TextTop = ({ title }) => {
   return (
-    <Container className="mb-4">
+    <Container className="my-5">
       <Row>
         <Col>
-          <h4>{title}</h4>
+          <h4 className="mt-4">{title}</h4>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
             molestias non libero, iusto aliquam ratione nesciunt perferendis
