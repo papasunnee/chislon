@@ -1,10 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
+import dynamic from "next/dynamic";
 import { Container, Row, Col } from "reactstrap";
+import { Loading, encode } from "../../util";
 // import Recaptcha from "react-google-invisible-recaptcha";
 import "./CertifiedPartnerForm.scss";
 
-const initialValue = {
+const SweetAlert = dynamic(
+  () => {
+    return import("sweetalert2-react");
+  },
+  { ssr: false }
+);
+
+const initialValues = {
   countries: [],
   firstname: "",
   lastname: "",
@@ -21,7 +30,9 @@ const initialValue = {
 };
 const CertifiedPartnerForm = () => {
   const captchaEl = useRef(null);
-  const [form, setForm] = useState(initialValue);
+  const [form, setForm] = useState(initialValues);
+  const [alertState, setAlertState] = useState(true);
+  const [btnState, setBtnState] = useState(false);
   const getCountries = async () => {
     const result = await axios("https://restcountries.eu/rest/v2/all");
     setForm((prevValues) => ({
@@ -33,15 +44,8 @@ const CertifiedPartnerForm = () => {
     getCountries();
   }, []);
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const handleSubmit = (event) => {
+    setBtnState(true);
     event.preventDefault();
     fetch("", {
       method: "POST",
@@ -51,8 +55,17 @@ const CertifiedPartnerForm = () => {
         ...form,
       }),
     })
-      .then(() => alert("/thank-you/"))
-      .catch((error) => alert(error));
+      .then(() => {
+        setBtnState(false);
+        setForm(initialValues);
+        setAlertState(true);
+      })
+      .catch((error) => {
+        alert("Please, try submitting your data again");
+        setBtnState(false);
+        // setForm(initialValues);
+        console.log(error);
+      });
   };
   const onSubmit = () => {
     if ("" == form.value) {
@@ -84,6 +97,12 @@ const CertifiedPartnerForm = () => {
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
+            <SweetAlert
+              show={alertState}
+              title="Demo"
+              text="Your Message Has been Successfully Submitted"
+              onConfirm={() => setAlertState(false)}
+            />
             <Row>
               <Col md={6}>
                 <div className="form-group">
@@ -293,11 +312,13 @@ const CertifiedPartnerForm = () => {
                   sitekey="6Le0zPAZAAAAAMZdhOAPB3SJFtAa_EpOlPShHgr4"
                   onResolved={() => console.log("Human detected.")}
                 /> */}
-                <input
+                <button
                   type="submit"
-                  value="Send Message"
                   className="btn submitButton"
-                />
+                  disabled={btnState}
+                >
+                  Send Message {btnState && <Loading />}
+                </button>
               </Col>
             </Row>
           </form>
