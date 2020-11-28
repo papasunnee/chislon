@@ -31,7 +31,7 @@ const initialValues = {
 const CertifiedPartnerForm = () => {
   const captchaEl = useRef(null);
   const [form, setForm] = useState(initialValues);
-  const [alertState, setAlertState] = useState(true);
+  const [alertState, setAlertState] = useState(false);
   const [btnState, setBtnState] = useState(false);
   const getCountries = async () => {
     const result = await axios("https://restcountries.eu/rest/v2/all");
@@ -99,7 +99,7 @@ const CertifiedPartnerForm = () => {
           >
             <SweetAlert
               show={alertState}
-              title="Demo"
+              title="Join Chislon Broadway"
               text="Your Message Has been Successfully Submitted"
               onConfirm={() => setAlertState(false)}
             />
