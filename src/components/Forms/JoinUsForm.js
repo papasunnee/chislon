@@ -81,6 +81,7 @@ const CertifiedPartnerForm = () => {
             name="join_us"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
           >
             <Row>

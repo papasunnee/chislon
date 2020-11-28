@@ -1,7 +1,7 @@
 import React from "react";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 
-export default () => {
+const CookieConsent = () => {
   return (
     <CookieConsent
       location="bottom"
@@ -10,14 +10,14 @@ export default () => {
       contentStyle={{
         color: "#fff",
         margin: 0,
-        paddingLeft: "10px"
+        paddingLeft: "10px",
       }}
       style={{
         background: "#242424",
         zIndex: 99999999999,
         color: "#fff",
         padding: 0,
-        margin: 0
+        margin: 0,
       }}
       buttonStyle={{
         color: "#242424",
@@ -30,7 +30,7 @@ export default () => {
         cursor: "pointer",
         flex: "0 0 auto",
         padding: "25px",
-        margin: 0
+        margin: 0,
       }}
       expires={150}
     >
@@ -41,3 +41,5 @@ export default () => {
     </CookieConsent>
   );
 };
+
+export default CookieConsent;
