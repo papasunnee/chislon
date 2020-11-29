@@ -28,7 +28,7 @@ const initialValues = {
   existing_client: "",
   question: "",
 };
-const CertifiedPartnerForm = () => {
+const JoinUsForm = () => {
   const captchaEl = useRef(null);
   const [form, setForm] = useState(initialValues);
   const [alertState, setAlertState] = useState(false);
@@ -218,27 +218,37 @@ const CertifiedPartnerForm = () => {
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">HOW DO WE CONTACT YOU</label>
-                  <input
-                    type="text"
+                  <select
                     name="how_we_contact"
                     id="how_we_contact"
                     value={form.how_we_contact}
                     onChange={handleChange}
                     className="form-control"
-                  />
+                  >
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
+                  </select>
                 </div>
               </Col>
               <Col md={6}>
                 <div className="form-group">
                   <label htmlFor="">ARE YOU</label>
-                  <input
-                    type="text"
+                  <select
                     name="what_are_you"
                     id="what_are_you"
                     value={form.what_are_you}
                     onChange={handleChange}
                     className="form-control"
-                  />
+                  >
+                    <option value="Lawyer">Lawyer</option>
+                    <option value="Accountant">Accountant</option>
+                    <option value="Certified Immigration Consultant">
+                      Certified Immigration Consultant
+                    </option>
+                    <option value="Private Banker / Financial Intermediary">
+                      Private Banker / Financial Intermediary
+                    </option>
+                  </select>
                 </div>
               </Col>
             </Row>
@@ -279,15 +289,16 @@ const CertifiedPartnerForm = () => {
                     DO YOU HAVE EXISTING CLIENTS ALREADY ENROLLED IN OTHER
                     PROGRAMS?
                   </label>
-                  <input
-                    type="text"
+                  <select
                     name="existing_client"
                     id="existing_client"
-                    interest_program
                     value={form.existing_client}
                     onChange={handleChange}
                     className="form-control"
-                  />
+                  >
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
                 </div>
               </Col>
               <Col md={6}>
@@ -328,7 +339,7 @@ const CertifiedPartnerForm = () => {
   );
 };
 
-export default CertifiedPartnerForm;
+export default JoinUsForm;
 
 export const TextTop = ({ title }) => {
   return (
