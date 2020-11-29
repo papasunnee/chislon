@@ -29,61 +29,61 @@ const Study = () => {
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>First Name</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>Last Name</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
                   <div className="form-group">
                     <label>Media Organization</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>Position</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
                   <div className="form-group">
                     <label>Nationality</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>Country of Residence</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
                   <div className="form-group">
                     <label>Website</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>Phone Number</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
                   <div className="form-group">
                     <label>Email</label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={5}>
                   <div className="form-group">
                     <label>Email (Repeat) </label>
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" required />
                   </div>
                 </Col>
                 <Col sm={12} md={6}>
@@ -103,7 +103,7 @@ const Study = () => {
                 </Col>
                 <Col md={12}>
                   <div className="form-group text-center">
-                    <ButtonStyle>SEND MESSAGE</ButtonStyle>
+                    <ButtonStyle type="submit">SEND MESSAGE</ButtonStyle>
                   </div>
                 </Col>
               </Row>
