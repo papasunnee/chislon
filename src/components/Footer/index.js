@@ -142,7 +142,7 @@ const Index = () => {
 
       <div className="copyrightBar">
         <p>
-          Copyright 2020 <span>Chislon Broadway Visa Services</span> All Rights
+          Copyright 2021 <span>Chislon Broadway Visa Services</span> All Rights
           Reserved
         </p>
         <div className="d-flex">
