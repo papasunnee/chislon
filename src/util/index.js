@@ -6,10 +6,10 @@ export const encode = (data) => {
 
 export const Loading = () => (
   <div
-    class="spinner-border"
+    className="spinner-border"
     role="status"
     style={{ width: "20px", height: "20px", borderWidth: "2px" }}
   >
-    <span class="sr-only">Loading...</span>
+    <span className="sr-only">Loading...</span>
   </div>
 );

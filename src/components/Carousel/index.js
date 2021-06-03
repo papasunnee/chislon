@@ -24,11 +24,11 @@ const items = [
     altText: "Slide 3",
     caption: "INTERNATIONAL HEADHUNTING",
   },
-  {
-    src: "/static/images/home/sliders/4.jpg",
-    altText: "Slide 4",
-    caption: "GLOBAL BUSINESS & INVESTMENT",
-  },
+  // {
+  //   src: "/static/images/home/sliders/4.jpg",
+  //   altText: "Slide 4",
+  //   caption: "GLOBAL BUSINESS & INVESTMENT",
+  // },
   // {
   //   src: "/static/images/home/sliders/5.jpg",
   //   altText: "Slide 5",

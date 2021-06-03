@@ -36,12 +36,12 @@ const Index = () => {
       <NavbarBrand href="/">
         <img src="/static/images/whitelogo.png" className="img-fluid" />
       </NavbarBrand>
-      <Menu right>
+      <Menu right isOpen={isOpen}>
         {Menus.map(({ href, label }, index) => {
           return (
             <NavItem key={index}>
               <Link href={href} passHref>
-                <NavLink>{label}</NavLink>
+                <NavLink onClick={() => setIsOpen(false)}>{label}</NavLink>
               </Link>
             </NavItem>
           );
