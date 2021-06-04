@@ -16,7 +16,7 @@ const Index = () => {
     <Fragment>
       <div className="container-fluid footer">
         <div className="row">
-          <div className="col-md-3 footer_links">
+          <div className="col-md-4 footer_links">
             <p className="heading">The Gateway To Global Citizenship</p>
             <Link href="/international-partner">
               <a className="become">
@@ -31,9 +31,9 @@ const Index = () => {
               </a>
             </Link>
           </div>
-          <div className="col-md-2 footer_links">
+          <div className="col-md-3 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
-              <h6>GLOBAL CITIZEN</h6>
+              <h6>PROGRAM</h6>
               <ul>
                 <li>
                   <Link href="/residency-by-investment">
@@ -68,7 +68,7 @@ const Index = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-2 footer_links">
+          {/* <div className="col-md-2 footer_links">
             <h6>PROGRAMS</h6>
             <ul>
               {flags.map((flag, index) => (
@@ -77,8 +77,8 @@ const Index = () => {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="col-md-3 footer_links">
+          </div> */}
+          <div className="col-md-4 footer_links">
             <h6>Contact Us</h6>
             <span class="d-block mb-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi

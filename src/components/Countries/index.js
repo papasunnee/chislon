@@ -33,6 +33,7 @@ export const CountryJumbo = ({ title, country = "usa" }) => (
     <Jumbotron
       fluid
       className="addOverlay"
+      // style={{ backgroundImage: `url('/static/images/flags/study about.png')` }}
       style={{ backgroundImage: `url('/static/images/flags/${country}.jpg')` }}
     >
       <Container

@@ -88,13 +88,19 @@
   outline: none;
   border-bottom: 1px solid white;
 }
-.bm-item a.nav-link {
+.dropdown .nav-link:not(:last-child) {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.bm-item > a.nav-link,
+.dropdown .nav-link {
   color: #fff !important;
   font-size: 14px;
   text-transform: uppercase !important;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.bm-item:hover a.nav-link {
+.bm-item:hover > a.nav-link,
+.bm-item > a.nav-link > .dropdown > .nav-link:hover {
   color: #d9a900 !important;
   padding-left: 15px;
 }
@@ -105,4 +111,19 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown .nav-link {
+  color: #fff;
+}
+
+.nav-link:hover .dropdown {
+  position: static;
+  height: 190px;
+  overflow: visible;
 }

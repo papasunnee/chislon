@@ -6,7 +6,17 @@ import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const Menus = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
+  {
+    label: "About",
+    href: "/about",
+    submenus: [
+      { label: "about 1", href: "/" },
+      { label: "about 2", href: "/" },
+      { label: "about 3", href: "/" },
+      { label: "about 4", href: "/" },
+      { label: "about 5", href: "/" },
+    ],
+  },
   { label: "Citizenship By Investment", href: "/citizenship-by-investment" },
   { label: "Citizenship By Residence", href: "/citizenship-by-residence" },
   { label: "High Networth", href: "/high-networth-investors" },
@@ -37,11 +47,13 @@ const Index = () => {
         <img src="/static/images/whitelogo.png" className="img-fluid" />
       </NavbarBrand>
       <Menu right isOpen={isOpen}>
-        {Menus.map(({ href, label }, index) => {
+        {Menus.map(({ href, label, submenus }, index) => {
           return (
             <NavItem key={index}>
               <Link href={href} passHref>
-                <NavLink onClick={() => setIsOpen(false)}>{label}</NavLink>
+                <NavLink onClick={() => setIsOpen(false)}>
+                  {label} {submenus && <Submenus submenus={submenus} />}
+                </NavLink>
               </Link>
             </NavItem>
           );
@@ -52,3 +64,15 @@ const Index = () => {
 };
 
 export default Index;
+
+const Submenus = ({ submenus = [] }) => {
+  return (
+    <div className="dropdown">
+      {submenus.map((submenu, index) => (
+        <Link href={submenu.href} passHref key={index}>
+          <NavLink>{submenu.label}</NavLink>
+        </Link>
+      ))}
+    </div>
+  );
+};
