@@ -17,7 +17,12 @@ const Index = () => {
       <div className="container-fluid footer">
         <div className="row">
           <div className="col-md-4 footer_links">
-            <p className="heading">The Gateway To Global Citizenship</p>
+            <img
+              style={{ maxWidth: "250px" }}
+              src="/static/images/global_migation_services.jpg"
+              className="img-fluid mb-5"
+            />
+            {/* <p className="heading">The Gateway To Global Citizenship</p> */}
             <Link href="/international-partner">
               <a className="become">
                 <h6>BECOME AN INTERNATIONAL PARTNER</h6>

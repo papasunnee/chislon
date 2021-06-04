@@ -12,23 +12,23 @@ const items = [
   {
     src: "/static/images/home/sliders/1.png",
     altText: "Slide 1",
-    caption: "GLOBAL MOBILITY SERVICE",
+    caption: "",
   },
   {
-    src: "/static/images/home/sliders/2.jpg",
-    altText: "Slide 2",
-    caption: "INTERNATIONAL EDUCATION",
-  },
-  {
-    src: "/static/images/home/sliders/3.jpg",
+    src: "/static/images/home/sliders/3.png",
     altText: "Slide 3",
-    caption: "INTERNATIONAL HEADHUNTING",
+    caption: "ACCESS WORLD-CLASS EDUCATION",
   },
-  // {
-  //   src: "/static/images/home/sliders/4.jpg",
-  //   altText: "Slide 4",
-  //   caption: "GLOBAL BUSINESS & INVESTMENT",
-  // },
+  {
+    src: "/static/images/home/sliders/2.png",
+    altText: "Slide 2",
+    caption: "ACCESS HIGHLY PAID JOBS ABROAD",
+  },
+  {
+    src: "/static/images/home/sliders/4.png",
+    altText: "Slide 4",
+    caption: "YOUR INVESTMENT ABROAD",
+  },
   // {
   //   src: "/static/images/home/sliders/5.jpg",
   //   altText: "Slide 5",
