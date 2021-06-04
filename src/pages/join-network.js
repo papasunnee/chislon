@@ -7,7 +7,7 @@ import ContactHere from "../components/Home/contactHere";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="JOIN CHISLON" />
+      <CountryJumbo title="JOIN CHISLON" country="joinchision.png" />
       <TextTop title="Your journey begins with Chislon Broadway" />
       <JoinUsForm />
       <ContactHere />

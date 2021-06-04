@@ -6,7 +6,7 @@ import ContactHere from "../components/Home/contactHere";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="HEALTHCARE ABROAD" />
+      <CountryJumbo title="HEALTHCARE ABROAD" country="healthcare.png" />
       <DoubleColumn heading="Healthcare Abroad Heading" />
       <DoubleColumn heading="Healthcare Abroad Heading" />
       <ContactHere />

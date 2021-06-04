@@ -28,13 +28,13 @@ const Countries = () => {
 
 export default Countries;
 
-export const CountryJumbo = ({ title, country = "usa" }) => (
+export const CountryJumbo = ({ title, country = "usa.jpg" }) => (
   <Fragment>
     <Jumbotron
       fluid
       className="addOverlay"
       // style={{ backgroundImage: `url('/static/images/flags/study about.png')` }}
-      style={{ backgroundImage: `url('/static/images/flags/${country}.jpg')` }}
+      style={{ backgroundImage: `url('/static/images/flags/${country}')` }}
     >
       <Container
         fluid

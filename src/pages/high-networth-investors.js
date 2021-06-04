@@ -7,7 +7,10 @@ import DoubleColumn from "../components/Home/DoubleColumn";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="HIGH NETWORTH INVESTMENT" />
+      <CountryJumbo
+        title="HIGH NETWORTH INVESTMENT"
+        country="highnetworth.png"
+      />
       <DoubleColumn heading="High Networth Heading" />
       <DoubleColumn heading="High Networth Heading" />
       <ContactHere />

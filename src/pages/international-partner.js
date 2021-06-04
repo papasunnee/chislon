@@ -9,7 +9,10 @@ import ContactHere from "../components/Home/contactHere";
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="INTERNATIONAL PARTNERS" />
+      <CountryJumbo
+        title="INTERNATIONAL PARTNERS"
+        country="internationalpartners.png"
+      />
       <TextTop title="Become an International Partner" />
       <CertifiedPartnerForm />
       <ContactHere />
