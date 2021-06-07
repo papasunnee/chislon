@@ -4,10 +4,11 @@ import Jumbotron from "../Jumbotron";
 
 const ContactJumbotron = (props) => {
   return (
-    <Jumbotron title="CONTACT">
+    // <Jumbotron title="CONTACT">
+    <Jumbotron>
       <section className="contactJumboBg p-5">
         <Row>
-          <Col md={{ size: 6, offset: 6 }}>
+          <Col md={{ size: 6 }}>
             <div className="jumbotronContent">
               <h5>GET IN TOUCH WITH US</h5>
               <p>

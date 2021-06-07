@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Jumbotron, Button } from "reactstrap";
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Fragment>
       <section className="myJumbo" style={{ backgroundColor: "red" }}>
@@ -10,10 +10,12 @@ const Index = props => {
             padding: 0,
             minHeight: "100px",
             backgroundImage:
-              "linear-gradient(160.13deg, #003E52 -0.69%, #00B8F2 100%)"
+              "linear-gradient(160.13deg, #003E52 -0.69%, #00B8F2 100%)",
           }}
         >
-          <div className="title">{props.title || "ABOUT US"}</div>
+          {props.title && (
+            <div className="title">{props.title || "ABOUT US"}</div>
+          )}
           {props.children}
         </Jumbotron>
       </section>
