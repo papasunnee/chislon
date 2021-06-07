@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Fragment>
       <div className="container-fluid footer">
-        <div className="row">
+        <div className="row" style={{ position: "relative", zIndex: "5" }}>
           <div className="col-md-4 footer_links">
             <img
               style={{ maxWidth: "250px" }}

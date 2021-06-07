@@ -1,8 +1,30 @@
 div.footer {
   padding: 4rem;
-  background-color: #01384b;
+  // background-color: #01384b;
   color: #c9c9c9;
   font-size: 12px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(/static/images/chislonfooterbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 56, 75, 0.945);
+  }
   .heading {
     color: #d9a900;
     font-size: 2rem;

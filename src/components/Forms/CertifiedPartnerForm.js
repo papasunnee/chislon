@@ -32,6 +32,7 @@ const initialValues = {
   how_you_found_us: "",
   question: "",
 };
+
 const CertifiedPartnerForm = () => {
   const captchaEl = useRef(null);
   const [form, setForm] = useState(initialValues);

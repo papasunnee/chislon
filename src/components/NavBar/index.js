@@ -44,7 +44,12 @@ const Index = () => {
       style={{ backgroundColor: "#002531" }}
     >
       <NavbarBrand href="/">
-        <img src="/static/images/whitelogo.png" className="img-fluid" />
+        <img
+          src="/static/images/logos/cbw_gms_bbg.png"
+          className="img-fluid"
+          style={{ maxWidth: "70px" }}
+        />
+        {/* <img src="/static/images/whitelogo.png" className="img-fluid" /> */}
       </NavbarBrand>
       <Menu right isOpen={isOpen}>
         {Menus.map(({ href, label, submenus }, index) => {
