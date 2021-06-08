@@ -23,7 +23,8 @@ div.footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(1, 56, 75, 0.945);
+    background-color: rgba(0, 24, 32, 0.952);
+    // background-color: rgba(1, 56, 75, 0.945);
   }
   .heading {
     color: #d9a900;
@@ -114,7 +115,8 @@ div.footer {
 }
 
 .copyrightBar {
-  background-color: #012f3f;
+  // background-color: #012f3f;
+  background-color: rgb(0, 24, 32);
   color: #fff;
   padding: 2rem 4rem;
   display: flex;

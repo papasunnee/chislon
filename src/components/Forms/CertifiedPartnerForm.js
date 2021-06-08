@@ -93,7 +93,7 @@ const CertifiedPartnerForm = () => {
   return (
     <Container className="mb-5 certifiedPartnerForm">
       <Row>
-        <Col md={12}>
+        <Col md={{ size: 8, offset: 2 }}>
           <form
             className="mt-5"
             name="certified_partner_form"

@@ -76,7 +76,7 @@ const Study = () => {
   return (
     <SectionStyle className="serviceSectionStyle">
       <Row>
-        <Col md={12}>
+        <Col md={{ size: 8, offset: 2 }}>
           <div className="formWrapper">
             <Heading3Style>Enquiry Form</Heading3Style>
             <p>Send us a message</p>
