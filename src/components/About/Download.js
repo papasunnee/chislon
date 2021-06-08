@@ -10,21 +10,7 @@ export default function Download() {
         <Container>
           <Row>
             <Col md={6}>
-              <div className="content">
-                <img src="/static/images/about/brochurecover.jpg" />
-                <div>
-                  <HeadingStyle>
-                    <span>DOWNLOAD OUR BROCHURE</span>
-                  </HeadingStyle>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quasi deserunt cum odio tempora tempore! Magnam minima quos
-                    obcaecati, possimus illo atque impedit cupiditate dicta
-                    repudiandae laborum deleniti vitae suscipit amet?
-                  </p>
-                  <ButtonStyle>DOWNLOAD NOW</ButtonStyle>
-                </div>
-              </div>
+              <DownloadBrochure />
             </Col>
             <Col md={6}>
               <div className="content">
@@ -34,7 +20,7 @@ export default function Download() {
                     <span>DOWNLOAD OUR BROCHURE</span>
                   </HeadingStyle>
                   <form
-                    onSubmit={e => {
+                    onSubmit={(e) => {
                       e.preventDefault();
                       alert("Contact Developer");
                     }}
@@ -83,3 +69,35 @@ export default function Download() {
     </Fragment>
   );
 }
+
+export const DownloadBrochure = () => {
+  return (
+    <>
+      <div className="content">
+        <img src="/static/images/about/brochurecover.jpg" />
+        <div>
+          <HeadingStyle>
+            <span>DOWNLOAD OUR BROCHURE</span>
+          </HeadingStyle>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            deserunt cum odio tempora tempore! Magnam minima quos obcaecati,
+            possimus illo atque impedit cupiditate dicta repudiandae laborum
+            deleniti vitae suscipit amet?
+          </p>
+          <ButtonStyle>DOWNLOAD NOW</ButtonStyle>
+        </div>
+      </div>
+      <style jsx>{`
+        .content {
+          display: flex;
+          align-items: center;
+        }
+        .content img {
+          max-width: 150px;
+          margin: 10px;
+        }
+      `}</style>
+    </>
+  );
+};

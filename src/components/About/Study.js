@@ -61,7 +61,7 @@ const Study = () => {
           padding : 4rem 2rem ;
           background-color: #f2f2f2 ;
         }
-        span{
+        .studySectionStyle span{
           color : #FFDA42 ;
           text-transform : uppercase ;
         }
@@ -88,5 +88,5 @@ const Visas = [
   { text: "Residency Visa", image: "residency-visa.png" },
   { text: "Student Visa", image: "student-visa.png" },
   { text: "Tourist Visa", image: "tourist-visa.png" },
-  { text: "Work Visa", image: "work-visa.png" }
+  { text: "Work Visa", image: "work-visa.png" },
 ];

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { flags } from "../Countries/index";
 
 import "./index.scss";
+import { DownloadBrochure } from "../About/Download";
 
 const Footerlinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
@@ -16,7 +17,7 @@ const Index = () => {
     <Fragment>
       <div className="container-fluid footer">
         <div className="row" style={{ position: "relative", zIndex: "5" }}>
-          <div className="col-md-4 footer_links">
+          <div className="col-md-3 footer_links">
             <img
               style={{ maxWidth: "250px" }}
               src="/static/images/global_migation_services.jpg"
@@ -36,7 +37,7 @@ const Index = () => {
               </a>
             </Link>
           </div>
-          <div className="col-md-3 footer_links">
+          <div className="col-md-2 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
               <h6>PROGRAM</h6>
               <ul>
@@ -83,7 +84,7 @@ const Index = () => {
               ))}
             </ul>
           </div> */}
-          <div className="col-md-4 footer_links">
+          <div className="col-md-3 footer_links">
             <h6>Contact Us</h6>
             <span class="d-block mb-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
@@ -141,6 +142,9 @@ const Index = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="col-md-4 footer_links">
+            <DownloadBrochure />
           </div>
         </div>
       </div>

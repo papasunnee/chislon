@@ -5,6 +5,7 @@ import CertifiedPartnerForm, {
   TextTop,
 } from "../components/Forms/CertifiedPartnerForm";
 import ContactHere from "../components/Home/contactHere";
+import DoubleColumn from "../components/Home/DoubleColumn";
 
 export default () => {
   return (
@@ -13,7 +14,9 @@ export default () => {
         title="INTERNATIONAL PARTNERS"
         country="internationalpartners.png"
       />
-      <TextTop title="Become an International Partner" />
+      <DoubleColumn heading="International Partner Heading" />
+      <DoubleColumn heading="International Partner Heading" />
+      {/* <TextTop title="Become an International Partner" /> */}
       <CertifiedPartnerForm />
       <ContactHere />
     </Fragment>
