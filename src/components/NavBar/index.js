@@ -55,6 +55,7 @@ const Index = () => {
           style={{ maxWidth: "250px" }}
         />
       </NavbarBrand>
+      <SocialMedia />
       <Menu right isOpen={isOpen}>
         {Menus.map(({ href, label, submenus }, index) => {
           return (
@@ -85,3 +86,21 @@ const Submenus = ({ submenus = [] }) => {
     </div>
   );
 };
+
+const SocialMedia = () => {
+  return (
+    <div>
+      <NavItem>
+        <NavLink>Whatsapp</NavLink>
+      </NavItem>
+    </div>
+  );
+};
+
+const handles = [
+  { name: "Whatsapp" },
+  { name: "Facebook" },
+  { name: "Twitter" },
+  { name: "LinkedIn" },
+  { name: "Email" },
+];

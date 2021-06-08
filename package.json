@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.6",
     "moment": "^2.24.0",
     "next": "^9.0.6",
@@ -33,6 +33,7 @@
     "react-invisible-recaptcha": "^0.3.1",
     "react-player": "^1.13.0",
     "react-svgloader": "^1.0.8",
+    "react-ticker": "^1.2.2",
     "reactstrap": "^8.0.1",
     "styled-components": "^4.3.2",
     "sweetalert2-react": "^0.8.3"
