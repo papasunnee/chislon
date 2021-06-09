@@ -124,6 +124,6 @@
 
 .nav-link:hover .dropdown {
   position: static;
-  height: 190px;
+  height: 240px;
   overflow: visible;
 }

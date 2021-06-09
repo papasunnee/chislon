@@ -5,14 +5,18 @@ import Ticker from "react-ticker";
 export default function NewsBar() {
   const [news, setNews] = useState([]);
   const getNews = async () => {
-    const response = await axios.get(
-      "https://newsapi.org/v2/everything?q=tesla&from=2021-05-08&sortBy=publishedAt&apiKey=1c7d1f64055c4caa80e0113c6c8adb41"
-    );
-    if (response.data.status == "ok") {
-      console.log("koko");
-      setNews(response.data.articles);
-    } else {
-      setNews([]);
+    try {
+      const response = await axios.get(
+        "https://newsapi.org/v2/everything?q=tesla&from=2021-05-08&sortBy=publishedAt&apiKey=1c7d1f64055c4caa80e0113c6c8adb41"
+      );
+      if (response.data.status == "ok") {
+        console.log("koko");
+        setNews(response.data.articles);
+      } else {
+        setNews([]);
+      }
+    } catch (error) {
+      console.log(error);
     }
     // console.log(response.data);
   };
