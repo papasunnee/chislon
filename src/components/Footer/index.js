@@ -144,7 +144,7 @@ const Index = () => {
             </div>
           </div>
           <div className="col-md-4 footer_links">
-            <DownloadBrochure />
+            <DownloadBrochure showImage={false} titleColor="white" />
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@ const Index = () => {
 };
 export default Index;
 
-const Socials = () => {
+export const Socials = () => {
   return (
     <ul className="footerSocials">
       <li>

@@ -70,14 +70,14 @@ export default function Download() {
   );
 }
 
-export const DownloadBrochure = () => {
+export const DownloadBrochure = ({ showImage = true, titleColor }) => {
   return (
     <>
       <div className="content">
-        <img src="/static/images/about/brochurecover.jpg" />
+        {showImage && <img src="/static/images/about/brochurecover.jpg" />}
         <div>
           <HeadingStyle>
-            <span>DOWNLOAD OUR BROCHURE</span>
+            <span className={titleColor}>DOWNLOAD OUR BROCHURE</span>
           </HeadingStyle>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
@@ -96,6 +96,9 @@ export const DownloadBrochure = () => {
         .content img {
           max-width: 150px;
           margin: 10px;
+        }
+        .white {
+          color: #fff;
         }
       `}</style>
     </>
