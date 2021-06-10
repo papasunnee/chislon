@@ -82,17 +82,17 @@ const Index = () => {
               <h6>SUBDOMAINS</h6>
               <ul>
                 <li>
-                  <Link href={`//research.${APP_DOMAIN}`}>
+                  <Link href={`https://research.${APP_DOMAIN}`}>
                     <a>Research</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href={`//institute.${APP_DOMAIN}`}>
+                  <Link href={`https://institute.${APP_DOMAIN}`}>
                     <a>Institute</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href={`//talentmasters.${APP_DOMAIN}`}>
+                  <Link href={`https://talentmasters.${APP_DOMAIN}`}>
                     <a>Talent Masters</a>
                   </Link>
                 </li>
