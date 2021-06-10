@@ -6,32 +6,6 @@ import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const Menus = [
   { label: "Home", href: "/" },
-  {
-    label: "About",
-    href: "/about",
-    submenus: [
-      { label: "Vision & Mission", href: "/vision-and-mission" },
-      { label: "Leadership Team", href: "/leadership-team" },
-      {
-        label: "Voluntary Code of Conduct",
-        href: "/voluntary-code-of-conduct",
-      },
-      { label: "Locations", href: "/locations" },
-      { label: "Join Our Team", href: "/join-network" },
-    ],
-  },
-  { label: "Citizenship By Investment", href: "/citizenship-by-investment" },
-  { label: "Citizenship By Residence", href: "/citizenship-by-residence" },
-  { label: "High Networth", href: "/high-networth-investors" },
-  { label: "Work Abroad", href: "/work-abroad" },
-  { label: "Study Abroad", href: "/study-abroad" },
-  { label: "Healthcare Abroad", href: "/healthcare-abroad" },
-  { label: "International Partners", href: "/international-partner" },
-  // { label: "Countries", href: "/country" },
-  // { label: "About", href: "/about" },
-  // { label: "Services", href: "/services" },
-  // { label: "Partners", href: "/partners" },
-  // { label: "Latest News", href: "/latest-news" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -47,11 +21,6 @@ const Index = () => {
       style={{ backgroundColor: "#002531" }}
     >
       <NavbarBrand href="/">
-        {/* <img
-          src="/static/images/logos/cbw_gms_bbg.png"
-          className="img-fluid"
-          style={{ maxWidth: "70px" }}
-        /> */}
         <img
           src="/static/images/whitelogo.png"
           className="img-fluid"

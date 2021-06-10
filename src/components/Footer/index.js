@@ -41,46 +41,13 @@ const Index = () => {
           </div>
           <div className="col-md-2 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
-              <h6>PROGRAM</h6>
+              <h6>OTHER LINKS</h6>
               <ul>
                 <li>
-                  <Link href="/residency-by-investment">
-                    <a>Residence by Investment</a>
+                  <Link href={`https://${APP_DOMAIN}`}>
+                    <a>Chislon Broadway</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="/citizenship-by-investment">
-                    <a>Citizenship by Investment</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/high-networth-investors">
-                    <a>High Net Worth Investors</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/work-abroad">
-                    <a>Work Abroad</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/study-abroad">
-                    <a>Study Abroad</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/healthcare-abroad">
-                    <a>Healthcare Abroad</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div
-              className=""
-              style={{ marginTop: "30px", marginRight: "14px" }}
-            >
-              <h6>SUBDOMAINS</h6>
-              <ul>
                 <li>
                   <Link href={`https://research.${APP_DOMAIN}`}>
                     <a>Research</a>
@@ -89,11 +56,6 @@ const Index = () => {
                 <li>
                   <Link href={`https://institute.${APP_DOMAIN}`}>
                     <a>Institute</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={`https://talentmasters.${APP_DOMAIN}`}>
-                    <a>Talent Masters</a>
                   </Link>
                 </li>
               </ul>
