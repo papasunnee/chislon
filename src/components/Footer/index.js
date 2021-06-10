@@ -6,6 +6,8 @@ import { flags } from "../Countries/index";
 import "./index.scss";
 import { DownloadBrochure } from "../About/Download";
 
+const APP_DOMAIN = "chislonbroadway.com";
+
 const Footerlinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Disclaimer", href: "/disclaimer" },
@@ -69,6 +71,29 @@ const Index = () => {
                 <li>
                   <Link href="/healthcare-abroad">
                     <a>Healthcare Abroad</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className=""
+              style={{ marginTop: "30px", marginRight: "14px" }}
+            >
+              <h6>SUBDOMAINS</h6>
+              <ul>
+                <li>
+                  <Link href={`//research.${APP_DOMAIN}`}>
+                    <a>Research</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`//institute.${APP_DOMAIN}`}>
+                    <a>Institute</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`//talentmasters.${APP_DOMAIN}`}>
+                    <a>Talent Masters</a>
                   </Link>
                 </li>
               </ul>

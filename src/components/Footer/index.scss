@@ -12,8 +12,9 @@ div.footer {
     top: 0;
     left: 0;
     background-image: url(/static/images/chislonfooterbg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    background-size: 40% 100%;
   }
   &::before {
     content: "";

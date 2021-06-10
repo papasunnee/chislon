@@ -16,7 +16,6 @@ const Menus = [
         label: "Voluntary Code of Conduct",
         href: "/voluntary-code-of-conduct",
       },
-      { label: "Global Partners", href: "/partners" },
       { label: "Locations", href: "/locations" },
       { label: "Join Our Team", href: "/join-network" },
     ],

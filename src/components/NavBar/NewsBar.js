@@ -50,6 +50,9 @@ export default function NewsBar() {
           border-right: 2px solid gray;
           padding-right: 10px;
           flex-shrink: 0;
+          color: #d9a900;
+          text-transform: uppercase;
+          font-weight: 600;
         }
         .newsBar .links_to_news {
           padding: 0px 10px;
