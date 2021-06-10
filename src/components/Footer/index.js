@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { NavItem, NavLink } from "reactstrap";
 import Link from "next/link";
-import { flags } from "../Countries/index";
 
 import "./index.scss";
 import { DownloadBrochure } from "../About/Download";
@@ -41,49 +40,11 @@ const Index = () => {
           </div>
           <div className="col-md-2 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
-              <h6>PROGRAM</h6>
+              <h6>OTHER LINKS</h6>
               <ul>
                 <li>
-                  <Link href="/residency-by-investment">
-                    <a>Residence by Investment</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/citizenship-by-investment">
-                    <a>Citizenship by Investment</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/high-networth-investors">
-                    <a>High Net Worth Investors</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/work-abroad">
-                    <a>Work Abroad</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/study-abroad">
-                    <a>Study Abroad</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/healthcare-abroad">
-                    <a>Healthcare Abroad</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div
-              className=""
-              style={{ marginTop: "30px", marginRight: "14px" }}
-            >
-              <h6>SUBDOMAINS</h6>
-              <ul>
-                <li>
-                  <Link href={`https://research.${APP_DOMAIN}`}>
-                    <a>Research</a>
+                  <Link href={`https://${APP_DOMAIN}`}>
+                    <a>Chislon Broadway</a>
                   </Link>
                 </li>
                 <li>
@@ -99,16 +60,6 @@ const Index = () => {
               </ul>
             </div>
           </div>
-          {/* <div className="col-md-2 footer_links">
-            <h6>PROGRAMS</h6>
-            <ul>
-              {flags.map((flag, index) => (
-                <li>
-                  <a href={flag.href}>{flag.name}</a>
-                </li>
-              ))}
-            </ul>
-          </div> */}
           <div className="col-md-3 footer_links">
             <h6>Contact Us</h6>
             <span class="d-block mb-4">
