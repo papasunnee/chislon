@@ -7,25 +7,7 @@ const AboutJumbotron = () => {
       <Jumbotron className="customAbout">
         <section className="aboutJumboBg p-5">
           <div className="jumbotronContent">
-            <h4 className="display-5">HISTORY</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore! Magnam minima quos obcaecati,
-              possimus illo atque impedit cupiditate dicta repudiandae laborum
-              deleniti vitae suscipit amet? Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Quasi deserunt cum odio tempora
-              tempore! Magnam minima quos obcaecati, possimus illo atque impedit
-              cupiditate dicta repudiandae laborum deleniti vitae suscipit amet?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-              deserunt cum odio tempora tempore! Magnam minima quos obcaecati,
-              possimus illo atque impedit cupiditate dicta repudiandae laborum
-              deleniti vitae suscipit amet? Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Quasi deserunt cum odio tempora
-              tempore! Magnam minima quos obcaecati, possimus illo atque impedit
-              cupiditate dicta repudiandae laborum deleniti vitae suscipit amet?
-            </p>
+            <h4 className="display-5">ABOUT INTERNATIONAL INSTITUTE</h4>
           </div>
         </section>
       </Jumbotron>

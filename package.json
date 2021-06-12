@@ -32,6 +32,7 @@
     "react-dom": "^16.9.0",
     "react-invisible-recaptcha": "^0.3.1",
     "react-player": "^1.13.0",
+    "react-scroll": "^1.8.2",
     "react-svgloader": "^1.0.8",
     "react-ticker": "^1.2.2",
     "reactstrap": "^8.0.1",
