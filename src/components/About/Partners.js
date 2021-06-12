@@ -6,7 +6,7 @@ const Partners = () => {
       <div className="row my-5">
         <div className="col-lg-12 pl-0">
           <div className="content">
-            <h5 className="text-center my-5">PARTNERS</h5>
+            <h5 className="text-center my-5">HEADING HERE</h5>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
               deserunt cum odio tempora tempore! Magnam minima quos obcaecati,
@@ -20,7 +20,6 @@ const Partners = () => {
               non proident, sunt in culpa qui officia deserunt mollit anim id
               est laborum.
             </p>
-            <h4 className="text-center my-5">Logos Here</h4>
           </div>
         </div>
       </div>
