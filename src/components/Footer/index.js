@@ -79,7 +79,7 @@ const Index = () => {
           </div>
           <div className="col-md-4 footer_links">
             <DownloadBrochure showImage={false} titleColor="white" />
-            <VacancyAlert />
+            {/* <VacancyAlert /> */}
           </div>
           <div className="col-md-4 footer_links">
             <div className="" style={{ marginRight: "14px" }}>
