@@ -104,3 +104,24 @@ export const DownloadBrochure = ({ showImage = true, titleColor }) => {
     </>
   );
 };
+
+export const VacancyAlert = () => {
+  return (
+    <>
+      <form className="my-5" style={{ maxWidth: "300px" }}>
+        <div className="form-group">
+          <label className="" style={{ fontSize: "15px" }}>
+            Vacancy Alert
+          </label>
+          <input
+            type="email"
+            placeholder="Email Address"
+            required
+            className="form-control mb-2"
+          />
+          <ButtonStyle type="submit">SUBMIT</ButtonStyle>
+        </div>
+      </form>
+    </>
+  );
+};

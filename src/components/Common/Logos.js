@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logos = () => {
+const Partners = () => {
   return (
     <div className="container">
       <div className="row">
@@ -12,39 +12,67 @@ const Logos = () => {
             laudantium excepturi. Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Minus natus quaerat similique perspiciatis
             mollitia ab explicabo minima placeat. Autem impedit tenetur harum ut
-            itaque a delectus atque aut laudantium excepturi. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Minus natus quaerat similique
-            perspiciatis mollitia ab explicabo minima placeat. Autem impedit
-            tenetur harum ut itaque a delectus atque aut laudantium excepturi.
+            itaque a delectus atque aut laudantium excepturi.
+          </p>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
             quaerat similique perspiciatis mollitia ab explicabo minima placeat.
             Autem impedit tenetur harum ut itaque a delectus atque aut
-            laudantium excepturi.
+            laudantium excepturi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minus natus quaerat similique perspiciatis
+            mollitia ab explicabo minima placeat. Autem impedit tenetur harum ut
+            itaque a delectus atque aut laudantium excepturi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
+            quaerat similique perspiciatis mollitia ab explicabo minima placeat.
+            Autem impedit tenetur harum ut itaque a delectus atque aut
+            laudantium excepturi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minus natus quaerat similique perspiciatis
+            mollitia ab explicabo minima placeat. Autem impedit tenetur harum ut
+            itaque a delectus atque aut laudantium excepturi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
+            quaerat similique perspiciatis mollitia ab explicabo minima placeat.
+            Autem impedit tenetur harum ut itaque a delectus atque aut
+            laudantium excepturi. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minus natus quaerat similique perspiciatis
+            mollitia ab explicabo minima placeat. Autem impedit tenetur harum ut
+            itaque a delectus atque aut laudantium excepturi.
           </p>
         </div>
+      </div>
+    </div>
+  );
+};
 
-        <div className="col-md-12 my-4">
-          <div className="logos">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
-              (img, index) => {
-                return (
-                  <div
-                    style={{
-                      position: "relative",
-                      display: "flex",
-                      alignItems: "center"
-                    }}
-                  >
-                    <img
-                      src={`static/images/partners/${img}.png`}
-                      key={index}
-                      className="img-fluid"
-                    />
-                  </div>
-                );
-              }
-            )}
-          </div>
+export default Partners;
+
+export const Logos = () => {
+  return (
+    <>
+      <div className="col-md-12 my-4">
+        <div className="logos">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+            (img, index) => {
+              return (
+                <div
+                  style={{
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={`static/images/partners/${img}.png`}
+                    key={index}
+                    className="img-fluid"
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
       <style jsx>{`
@@ -64,8 +92,6 @@ const Logos = () => {
           filter: grayscale(70%);
         }
       `}</style>
-    </div>
+    </>
   );
 };
-
-export default Logos;

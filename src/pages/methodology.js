@@ -5,7 +5,7 @@ import Partners from "../components/Common/Logos";
 const Index = () => {
   return (
     <div>
-      <Jumbotron title="PARTNERS" />
+      <Jumbotron title="METHODOLOGY" />
       <Partners />
     </div>
   );

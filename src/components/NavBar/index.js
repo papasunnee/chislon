@@ -6,6 +6,10 @@ import { NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const Menus = [
   { label: "Home", href: "/" },
+  { label: "Methodology", href: "/methodology" },
+  { label: "Employers", href: "/employers" },
+  { label: "Job Seeker", href: "/job-seekers" },
+  { label: "Partners", href: "/partners" },
   { label: "Contact Us", href: "/contact" },
 ];
 

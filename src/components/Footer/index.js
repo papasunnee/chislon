@@ -4,7 +4,7 @@ import Link from "next/link";
 import { flags } from "../Countries/index";
 
 import "./index.scss";
-import { DownloadBrochure } from "../About/Download";
+import { DownloadBrochure, VacancyAlert } from "../About/Download";
 
 const APP_DOMAIN = "chislonbroadway.com";
 
@@ -19,59 +19,7 @@ const Index = () => {
     <Fragment>
       <div className="container-fluid footer">
         <div className="row" style={{ position: "relative", zIndex: "5" }}>
-          <div className="col-md-3 footer_links">
-            <img
-              style={{ maxWidth: "250px" }}
-              src="/static/images/global_migation_services.jpg"
-              className="img-fluid mb-5"
-            />
-            {/* <p className="heading">The Gateway To Global Citizenship</p> */}
-            <Link href="/international-partner">
-              <a className="become">
-                <h6>BECOME AN INTERNATIONAL PARTNER</h6>
-                <p>Discover the advantage of working with ChislonBroadway</p>
-              </a>
-            </Link>
-            <Link href="/join-network">
-              <a className="become">
-                <h6>JOIN CHISLONBROADWAY NETWORK</h6>
-                <p>Discover the benefits for generations to come</p>
-              </a>
-            </Link>
-          </div>
-          <div className="col-md-2 footer_links">
-            <div className="" style={{ marginRight: "14px" }}>
-              <h6>OTHER LINKS</h6>
-              <ul>
-                <li>
-                  <Link href={`https://${APP_DOMAIN}`}>
-                    <a>Chislon Broadway</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={`https://research.${APP_DOMAIN}`}>
-                    <a>Research</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={`https://institute.${APP_DOMAIN}`}>
-                    <a>Institute</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <div className="col-md-2 footer_links">
-            <h6>PROGRAMS</h6>
-            <ul>
-              {flags.map((flag, index) => (
-                <li>
-                  <a href={flag.href}>{flag.name}</a>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-          <div className="col-md-3 footer_links">
+          <div className="col-md-4 footer_links">
             <h6>Contact Us</h6>
             <span class="d-block mb-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
@@ -132,6 +80,29 @@ const Index = () => {
           </div>
           <div className="col-md-4 footer_links">
             <DownloadBrochure showImage={false} titleColor="white" />
+            <VacancyAlert />
+          </div>
+          <div className="col-md-4 footer_links">
+            <div className="" style={{ marginRight: "14px" }}>
+              <h6>OTHER PROGRAMS</h6>
+              <ul>
+                <li>
+                  <Link href={`https://${APP_DOMAIN}`}>
+                    <a>Chislon Broadway</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`https://research.${APP_DOMAIN}`}>
+                    <a>Migration Research</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`https://institute.${APP_DOMAIN}`}>
+                    <a>International Institute</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
