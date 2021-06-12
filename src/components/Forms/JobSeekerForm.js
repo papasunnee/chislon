@@ -3,6 +3,9 @@ import axios from "axios";
 import dynamic from "next/dynamic";
 import { Container, Row, Col } from "reactstrap";
 import { Loading, encode } from "../../util";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import "./reactPhoneInput.scss";
 // import Recaptcha from "react-google-invisible-recaptcha";
 import "./CertifiedPartnerForm.scss";
 
@@ -18,12 +21,27 @@ const initialValues = {
   lastname: "",
   email: "",
   phone: "",
+  nationality: "",
+  company_sector: "agricultire",
+  company_highestQualification: "post_graduate",
+  countries: [],
 };
 const JobSeekerForm = () => {
   const captchaEl = useRef(null);
   const [form, setForm] = useState(initialValues);
   const [alertState, setAlertState] = useState(false);
   const [btnState, setBtnState] = useState(false);
+
+  const getCountries = async () => {
+    const result = await axios("https://restcountries.eu/rest/v2/all");
+    setForm((prevValues) => ({
+      ...prevValues,
+      countries: [...result.data],
+    }));
+  };
+  useEffect(() => {
+    getCountries();
+  }, []);
 
   const handleSubmit = (event) => {
     setBtnState(true);
@@ -64,6 +82,13 @@ const JobSeekerForm = () => {
     setForm((prevValues) => ({
       ...prevValues,
       [name]: value,
+    }));
+  };
+
+  const handlePhoneChange = ({ phone }) => {
+    setForm((prevValues) => ({
+      ...prevValues,
+      phone: phone,
     }));
   };
   return (
@@ -140,13 +165,94 @@ const JobSeekerForm = () => {
                   <label htmlFor="">
                     PHONE <span className="text-danger">*</span>
                   </label>
-                  <input
+                  <PhoneInput
+                    style={{ width: "100% !important" }}
+                    country="ng"
+                    value={form.phone}
+                    onChange={(phone) => handlePhoneChange({ phone })}
+                    className="form-control"
+                  />
+                  {/* <input
                     type="number"
                     name="phone"
                     id="phone"
                     onChange={handleChange}
                     value={form.phone}
                     className="form-control"
+                  /> */}
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6}>
+                <div className="form-group">
+                  <label htmlFor="">
+                    COUNTRY WHERE JOB IS REQUIRED
+                    <span className="text-danger">*</span>
+                  </label>
+                  <select
+                    name="nationality"
+                    id="nationality"
+                    value={form.nationality}
+                    onChange={handleChange}
+                    className="form-control"
+                  >
+                    {form.countries.map((country, index) => {
+                      return (
+                        <option key={index} value={country.name}>
+                          {country.name}
+                        </option>
+                      );
+                    })}
+                  </select>
+                </div>
+              </Col>
+              <Col md={6}>
+                <div className="form-group">
+                  <label htmlFor="">SECTOR</label>
+                  <select
+                    name="company_sector"
+                    id="company_sector"
+                    value={form.company_sector}
+                    onChange={handleChange}
+                    className="form-control"
+                  >
+                    <option value="agriculture">Agriculture</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="ICT">ICT</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="telecommunication">Telecommunication</option>
+                  </select>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6}>
+                <div className="form-group">
+                  <label htmlFor="">HIGHEST QUALIFICATION</label>
+                  <select
+                    name="highestQualification"
+                    id="highestQualification"
+                    value={form.company_highestQualification}
+                    onChange={handleChange}
+                    className="form-control"
+                  >
+                    <option value="post_graduate">Post Graduate</option>
+                    <option value="first_degree">First Degree</option>
+                    <option value="diploma">Diploma</option>
+                  </select>
+                </div>
+              </Col>
+
+              <Col md={6}>
+                <div className="form-group">
+                  <label htmlFor="">UPLOAD CV/RESUME</label>
+                  <input
+                    type="file"
+                    name="resume"
+                    id="resume"
+                    className="form-control"
+                    required
                   />
                 </div>
               </Col>
@@ -164,7 +270,7 @@ const JobSeekerForm = () => {
                   className="btn submitButton"
                   disabled={btnState}
                 >
-                  Send Message {btnState && <Loading />}
+                  SUBMIT {btnState && <Loading />}
                 </button>
               </Col>
             </Row>
@@ -175,7 +281,7 @@ const JobSeekerForm = () => {
         {`
           .submitButton {
             border: 1px solid #f2f2f2;
-            padding: 12px 16px;
+            padding: 10px 30px;
           }
           .submitButton:hover {
             background-color: #e2e2e2;
