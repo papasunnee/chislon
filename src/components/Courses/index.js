@@ -6,7 +6,7 @@ const InternationalPartners = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 my-5">
-          <h4>Courses</h4>
+          <h4>Exam Preps</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
             quaerat similique perspiciatis mollitia ab explicabo minima placeat.
@@ -18,7 +18,7 @@ const InternationalPartners = () => {
           </p>
         </div>
         <div className="col-md-12 my-5">
-          <h4>Courses List</h4>
+          <h4>Exam Preps List</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
             quaerat similique perspiciatis mollitia ab explicabo minima placeat.

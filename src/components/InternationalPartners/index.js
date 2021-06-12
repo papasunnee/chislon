@@ -5,7 +5,7 @@ const InternationalPartners = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 my-5">
-          <h4>International Partners</h4>
+          <h4>Student Recruitment</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
             quaerat similique perspiciatis mollitia ab explicabo minima placeat.
@@ -35,7 +35,7 @@ const InternationalPartners = () => {
           </p>
         </div>
         <div className="col-md-12 my-5">
-          <h4>International Recruitment</h4>
+          <h4>Student Recruitment</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
             quaerat similique perspiciatis mollitia ab explicabo minima placeat.
@@ -52,5 +52,3 @@ const InternationalPartners = () => {
 };
 
 export default InternationalPartners;
-
-

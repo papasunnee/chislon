@@ -11,8 +11,8 @@ const Menus = [
     label: "Services",
     href: "/services",
     submenus: [
-      { label: "International Studies", href: "/international-studies" },
-      { label: "Courses", href: "/courses" },
+      { label: "Student Recruitment", href: "/student-recruitment" },
+      { label: "Exam Preps", href: "/exam-preps" },
     ],
   },
   { label: "Partners", href: "/partners" },
