@@ -28,7 +28,7 @@ const Index = () => {
         <img
           src="/static/images/whitelogo.png"
           className="img-fluid"
-          style={{ maxWidth: "250px" }}
+          style={{ maxWidth: "200px" }}
         />
       </NavbarBrand>
       <SocialMedia />
