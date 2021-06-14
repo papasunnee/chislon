@@ -6,6 +6,7 @@ export default () => {
   return (
     <Fragment>
       <CountryJumbo title="QUEBEC, CANADA" className="canada" />
+      <h1>CANADA</h1>
     </Fragment>
   );
 };

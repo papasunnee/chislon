@@ -13,7 +13,10 @@ export const PopularDestination = () => {
               return (
                 <Link href={flag.href} key={index}>
                   <a className="country_flag">
-                    <img src={`/static/images/flags/${flag.logo}`} />
+                    <img
+                      src={`/static/images/flags/${flag.logo}`}
+                      classNaME="img-fluid"
+                    />
                     {/* <p>{flag.name}</p> */}
                   </a>
                 </Link>
@@ -93,11 +96,11 @@ export const flags = [
   { name: "Hungary", href: "/country/hungary", logo: "hungary.jpg" },
   { name: "Montenegro", href: "/country/montenegro", logo: "montenegro.jpg" },
   { name: "Portugal", href: "/country/portugal", logo: "portugal.jpg" },
-  {
-    name: "Saint Lucia",
-    href: "/country/saint-lucia",
-    logo: "saint-lucia.jpg",
-  },
+  // {
+  //   name: "Saint Lucia",
+  //   href: "/country/saint-lucia",
+  //   logo: "saint-lucia.jpg",
+  // },
   {
     name: "United Kingdom",
     href: "/country/united-kingdom",
