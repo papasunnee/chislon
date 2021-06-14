@@ -3,6 +3,29 @@ import Link from "next/link";
 import { Container, Jumbotron, Row } from "reactstrap";
 import "./index.scss";
 
+export const PopularDestination = () => {
+  return (
+    <Fragment>
+      <Container>
+        <Row className="row">
+          <div className="country_flag_wrapper">
+            {flags.map((flag, index) => {
+              return (
+                <Link href={flag.href} key={index}>
+                  <a className="country_flag">
+                    <img src={`/static/images/flags/${flag.logo}`} />
+                    {/* <p>{flag.name}</p> */}
+                  </a>
+                </Link>
+              );
+            })}
+          </div>
+        </Row>
+      </Container>
+    </Fragment>
+  );
+};
+
 const Countries = () => {
   return (
     <Fragment>
@@ -53,16 +76,32 @@ export const CountryJumbo = ({ title, country = "usa.jpg" }) => (
 );
 
 export const flags = [
-  { name: "Antigua Barbuda", href: "/country/antigua-barbuda" },
-  { name: "Bulgaria", href: "/country/bulgaria" },
-  { name: "Quebec, Canada", href: "/country/quebec-canada" },
-  { name: "Cyprus", href: "/country/cyprus" },
-  { name: "Dominica", href: "/country/dominica" },
-  { name: "Grenada", href: "/country/grenada" },
-  { name: "Hungary", href: "/country/hungary" },
-  { name: "Montenegro", href: "/country/montenegro" },
-  { name: "Portugal", href: "/country/portugal" },
-  { name: "Saint Lucia", href: "/country/saint-lucia" },
-  { name: "United Kingdom", href: "/country/united-kingdom" },
-  { name: "USA", href: "/country/usa" },
+  {
+    name: "Antigua Barbuda",
+    href: "/country/antigua-barbuda",
+    logo: "barbuda.jpg",
+  },
+  { name: "Bulgaria", href: "/country/bulgaria", logo: "bulgaria.jpg" },
+  {
+    name: "Quebec, Canada",
+    href: "/country/quebec-canada",
+    logo: "canada.jpg",
+  },
+  { name: "Cyprus", href: "/country/cyprus", logo: "cyprus.jpg" },
+  { name: "Dominica", href: "/country/dominica", logo: "dominica.jpg" },
+  { name: "Grenada", href: "/country/grenada", logo: "grenada.jpg" },
+  { name: "Hungary", href: "/country/hungary", logo: "hungary.jpg" },
+  { name: "Montenegro", href: "/country/montenegro", logo: "montenegro.jpg" },
+  { name: "Portugal", href: "/country/portugal", logo: "portugal.jpg" },
+  {
+    name: "Saint Lucia",
+    href: "/country/saint-lucia",
+    logo: "saint-lucia.jpg",
+  },
+  {
+    name: "United Kingdom",
+    href: "/country/united-kingdom",
+    logo: "united-kingdom.jpg",
+  },
+  { name: "USA", href: "/country/usa", logo: "usa.jpg" },
 ];

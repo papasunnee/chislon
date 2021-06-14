@@ -4,6 +4,7 @@ import Study from "../components/Home/Study";
 import CategoryRow from "../components/Home/CategoryRow";
 import ServiceOptions from "../components/Home/ServiceOptions";
 import DoubleColumn from "../components/Home/DoubleColumn";
+import { PopularDestination } from "../components/Countries";
 
 const Index = () => {
   return (
@@ -12,7 +13,8 @@ const Index = () => {
       <DoubleColumn />
       {/* <Study /> */}
       <ServiceOptions />
-      <CategoryRow />
+      {/* <CategoryRow /> */}
+      <PopularDestination />
     </Fragment>
   );
 };
