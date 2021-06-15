@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { Container, Jumbotron } from "reactstrap";
-import { CountryJumbo } from "../../components/Countries/index";
+import { CountryJumbo, CountryBody } from "../../components/Countries/index";
 
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="BULGARIA" className="bulgaria" />
-      <h1>BULGARIA</h1>
+      <CountryJumbo title="BULGARIA" className="bulgaria" country="bulgaria" />
+      <CountryBody title="BULGARIA" />
     </Fragment>
   );
 };

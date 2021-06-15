@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { CountryJumbo } from "../../components/Countries/index";
+import { CountryJumbo, CountryBody } from "../../components/Countries/index";
 
 export default () => {
   return (
     <Fragment>
       <CountryJumbo title="ANTIGUA AND BARBUDA" country="barbuda" />
+      <CountryBody title="ANTIGUA AND BARBUDA" />
       <Container>
         <h1>ANTIGUA AND BARBUDA</h1>
         {/* <Row className="my-5">

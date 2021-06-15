@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import { CountryJumbo } from "../../components/Countries/index";
+import { CountryJumbo, CountryBody } from "../../components/Countries/index";
 
 export default () => {
   return (
     <Fragment>
-      <CountryJumbo title="HUNGARY" className="hungary" />
-      <h1>HUNGARY</h1>
+      <CountryJumbo title="HUNGARY" className="hungary" country="hungary" />
+      <CountryBody title="HUNGARY" />
     </Fragment>
   );
 };

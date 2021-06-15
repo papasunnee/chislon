@@ -10,9 +10,7 @@ const ServiceOptions = () => {
       <Container>
         <Row>
           <Col md={12}>
-            <HeadingStyle style={{ margin: "2rem 0" }}>
-              NEW HEADING HERE
-            </HeadingStyle>
+            <HeadingStyle style={{ margin: "2rem 0" }}>PROGRAMS</HeadingStyle>
           </Col>
           <Col md={4}>
             <div className="option_wrapper">
