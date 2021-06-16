@@ -14,7 +14,7 @@ export const PopularDestination = () => {
           </Col>
         </Row>
         <Row className="row">
-          <Marquee>
+          <Marquee pauseOnHover={true}>
             <div className="country_flag_wrapper">
               {flags.map((flag, index) => {
                 return (
