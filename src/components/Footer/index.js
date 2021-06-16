@@ -83,12 +83,12 @@ const Index = () => {
               <ul>
                 <li>
                   <Link href={`https://research.${APP_DOMAIN}`}>
-                    <a>Research</a>
+                    <a>Migration Research</a>
                   </Link>
                 </li>
                 <li>
                   <Link href={`https://institute.${APP_DOMAIN}`}>
-                    <a>Institute</a>
+                    <a>International Institute</a>
                   </Link>
                 </li>
                 <li>
