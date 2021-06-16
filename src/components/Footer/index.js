@@ -79,7 +79,7 @@ const Index = () => {
               className=""
               style={{ marginTop: "30px", marginRight: "14px" }}
             >
-              <h6>SUBDOMAINS</h6>
+              <h6>OTHER PROGRAMS</h6>
               <ul>
                 <li>
                   <Link href={`https://research.${APP_DOMAIN}`}>
