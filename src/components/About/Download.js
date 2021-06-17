@@ -85,7 +85,24 @@ export const DownloadBrochure = ({ showImage = true, titleColor }) => {
             possimus illo atque impedit cupiditate dicta repudiandae laborum
             deleniti vitae suscipit amet?
           </p>
-          <ButtonStyle>DOWNLOAD NOW</ButtonStyle>
+          <form
+            style={{ maxWidth: "80%" }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("We will contact you soon");
+            }}
+          >
+            <div className="form-group">
+              <input
+                className="form-control"
+                type="email"
+                required
+                placeholder="Email Here"
+              />
+            </div>
+
+            <ButtonStyle>DOWNLOAD NOW</ButtonStyle>
+          </form>
         </div>
       </div>
       <style jsx>{`

@@ -29,7 +29,7 @@ const ContactJumbotron = (props) => {
       </section>
       <style jsx>{`
         .contactJumboBg {
-          background-image: url(/static/images/flags/contact.png),
+          background-image: url(/static/images/contact/contact.png),
             linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
           background-repeat: no-repeat;
           background-size: cover;

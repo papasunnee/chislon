@@ -6,7 +6,10 @@ import Partners from "../components/About/Partners";
 const Index = () => {
   return (
     <Fragment>
-      <AboutJumbotron title="ABOUT MIGRATION RESEARCH" />
+      <AboutJumbotron
+        // title="ABOUT MIGRATION RESEARCH"
+        image="about/about.jpg"
+      />
       <Vision />
       <Partners />
     </Fragment>
