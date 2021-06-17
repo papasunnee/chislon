@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import Jumbotron from "../Jumbotron";
 
-const AboutJumbotron = () => {
+const AboutJumbotron = ({ image }) => {
   return (
     <Fragment>
-      <Jumbotron className="customAbout">
-        <section className="aboutJumboBg p-5">
+      <Jumbotron image={image}>
+        {/* <section className="aboutJumboBg p-5">
           <div className="jumbotronContent">
             <h4 className="display-5">HISTORY</h4>
             <p>
@@ -27,7 +27,7 @@ const AboutJumbotron = () => {
               cupiditate dicta repudiandae laborum deleniti vitae suscipit amet?
             </p>
           </div>
-        </section>
+        </section> */}
       </Jumbotron>
       <style jsx>{`
         .aboutJumboBg {

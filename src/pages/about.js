@@ -9,7 +9,7 @@ import Study from "../components/About/Study";
 const Index = () => {
   return (
     <Fragment>
-      <AboutJumbotron />
+      <AboutJumbotron image="about/about.jpg" />
       <Vision />
       <Download />
       <Partners />

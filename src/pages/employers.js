@@ -6,7 +6,7 @@ import EmployerForm from "../components/Forms/EmployerForm";
 const Index = () => {
   return (
     <div>
-      <Jumbotron title="EMPLOYERS" />
+      <Jumbotron title="EMPLOYERS" image="employer/employer.jpg" />
       <Partners />
       <EmployerForm />
     </div>
