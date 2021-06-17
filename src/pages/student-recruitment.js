@@ -8,7 +8,7 @@ const Index = () => {
     <div>
       <Jumbotron
         title="STUDENT RECRUITMENT"
-        image="service/student-recruitment.jpg"
+        image="service/student-recruitment.png"
       />
       <InternationalPartners />
       <InternationalRecruitmentForm />

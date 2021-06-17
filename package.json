@@ -33,6 +33,7 @@
     "react-invisible-recaptcha": "^0.3.1",
     "react-phone-input-2": "^2.14.0",
     "react-player": "^1.13.0",
+    "react-responsive-modal": "^6.1.0",
     "react-scroll": "^1.8.2",
     "react-svgloader": "^1.0.8",
     "react-ticker": "^1.2.2",

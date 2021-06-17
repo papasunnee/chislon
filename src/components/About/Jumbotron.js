@@ -4,7 +4,7 @@ import Jumbotron from "../Jumbotron";
 const AboutJumbotron = () => {
   return (
     <Fragment>
-      <Jumbotron image="about/about.jpg">
+      <Jumbotron image="about/about.png">
         <section className="aboutJumboBg p-5">
           <div className="jumbotronContent">
             {/* <h4 className="display-5">ABOUT INTERNATIONAL INSTITUTE</h4> */}

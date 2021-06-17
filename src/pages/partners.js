@@ -5,7 +5,7 @@ import Logos from "../components/Common/Logos";
 const Index = () => {
   return (
     <div>
-      <Jumbotron title="PARTNERS" image="partner/partner.jpg" />
+      <Jumbotron title="PARTNERS" image="partner/partner.png" />
       <Logos />
     </div>
   );
