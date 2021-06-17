@@ -6,7 +6,7 @@ import CourseForm from "../components/Forms/CourseForm";
 const Index = () => {
   return (
     <div>
-      <Jumbotron title="EXAM PREPS" />
+      <Jumbotron title="EXAM PREPS" image="service/exam-prep.jpg" />
       <Courses />
       <CourseForm />
     </div>

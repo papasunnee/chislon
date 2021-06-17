@@ -9,7 +9,7 @@ const Menus = [
   { label: "About", href: "/about" },
   {
     label: "Services",
-    href: "/services",
+    href: "#",
     submenus: [
       { label: "Student Recruitment", href: "/student-recruitment" },
       { label: "Exam Preps", href: "/exam-preps" },
@@ -37,7 +37,6 @@ const Index = () => {
           style={{ maxWidth: "200px" }}
         />
       </NavbarBrand>
-      <SocialMedia />
       <Menu right isOpen={isOpen}>
         {Menus.map(({ href, label, submenus }, index) => {
           return (

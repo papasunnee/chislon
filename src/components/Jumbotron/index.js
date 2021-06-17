@@ -1,22 +1,22 @@
 import React, { Fragment } from "react";
 import { Jumbotron, Button } from "reactstrap";
 
-const Index = (props) => {
+const Index = ({ image = "service/exam-prep.jpg", title, children }) => {
   return (
     <Fragment>
-      <section className="myJumbo" style={{ backgroundColor: "red" }}>
+      <section className="">
         <Jumbotron
           style={{
             padding: 0,
-            minHeight: "100px",
-            backgroundImage:
-              "linear-gradient(160.13deg, #003E52 -0.69%, #00B8F2 100%)",
+            minHeight: "400px",
+            backgroundImage: `url(/static/images/${image}), linear-gradient(160.13deg, #003E52 -0.69%, #00B8F2 100%) `,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
           }}
         >
-          {props.title && (
-            <div className="title">{props.title || "ABOUT US"}</div>
-          )}
-          {props.children}
+          {title && <div className="title">{title || "ABOUT US"}</div>}
+          {children}
         </Jumbotron>
       </section>
       <style jsx>
@@ -32,13 +32,6 @@ const Index = (props) => {
             color: #fff;
             font-weight: 600;
             clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
-          }
-          .myJumbo {
-            background-image: red;
-            background-repeat: no-repeat;
-            background-position: bottom center;
-            background-size: contain;
-            position: relative;
           }
         `}
       </style>

@@ -6,7 +6,10 @@ import InternationalRecruitmentForm from "../components/Forms/InternationalRecru
 const Index = () => {
   return (
     <div>
-      <Jumbotron title="STUDENT RECRUITMENT" />
+      <Jumbotron
+        title="STUDENT RECRUITMENT"
+        image="service/student-recruitment.jpg"
+      />
       <InternationalPartners />
       <InternationalRecruitmentForm />
     </div>

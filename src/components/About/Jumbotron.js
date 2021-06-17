@@ -4,28 +4,25 @@ import Jumbotron from "../Jumbotron";
 const AboutJumbotron = () => {
   return (
     <Fragment>
-      <Jumbotron className="customAbout">
+      <Jumbotron image="about/about.jpg">
         <section className="aboutJumboBg p-5">
           <div className="jumbotronContent">
-            <h4 className="display-5">ABOUT INTERNATIONAL INSTITUTE</h4>
+            {/* <h4 className="display-5">ABOUT INTERNATIONAL INSTITUTE</h4> */}
           </div>
         </section>
       </Jumbotron>
       <style jsx>{`
         .aboutJumboBg {
-          background-image: url(/static/images/about/about.jpg),
-            linear-gradient(114.17deg, #003e52 -0.69%, #00b8f2 100%);
           background-repeat: no-repeat;
-          background-size: contain;
-          background-position: bottom center;
-        }
-
-        .jumboBg {
+          background-size: cover;
+          background-position: center center;
+          min-height: inherit;
         }
         .jumbotronContent {
           max-width: 500px;
           margin: auto;
           text-align: center;
+          height: 100%;
         }
         .jumbotronContent h4 {
           color: #ffda42;

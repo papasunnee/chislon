@@ -9,46 +9,11 @@ import {
 import "./index.scss";
 
 const items = [
-  // {
-  //   src: "/static/images/home/sliders/1.png",
-  //   altText: "Slide 1",
-  //   caption: "",
-  // },
   {
-    src: "/static/images/home/sliders/3.png",
-    altText: "Slide 3",
+    src: "/static/images/home/sliders/1.jpg",
+    altText: "Slide 1",
     caption: "",
   },
-  // {
-  //   src: "/static/images/home/sliders/2.png",
-  //   altText: "Slide 2",
-  //   caption: "ACCESS HIGHLY PAID JOBS ABROAD",
-  // },
-  // {
-  //   src: "/static/images/home/sliders/4.png",
-  //   altText: "Slide 4",
-  //   caption: "YOUR INVESTMENT ABROAD",
-  // },
-  // {
-  //   src: "/static/images/home/sliders/5.jpg",
-  //   altText: "Slide 5",
-  //   caption: "GLOBAL HEALTH CARE",
-  // },
-  // {
-  //   src: "/static/images/home/sliders/6.jpg",
-  //   altText: "Slide 6",
-  //   caption: "RESIDENCY & CITIZENSHIP",
-  // },
-  // {
-  //   src: "/static/images/home/sliders/6.jpg",
-  //   altText: "Slide 6",
-  //   caption: "ADDITIONAL CAPTION",
-  // },
-  // {
-  //   src: "/static/images/home/sliders/6.jpg",
-  //   altText: "Slide 6",
-  //   caption: "ADDITIONAL CAPTION",
-  // },
 ];
 
 class MyCarousel extends Component {
